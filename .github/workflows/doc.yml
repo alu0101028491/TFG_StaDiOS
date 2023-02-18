@@ -36,7 +36,7 @@ jobs:
         run: java -jar jar/widoco.jar -ontFile ontology/StaDiOS.owl -oops -uniteSections -getOntologyMetadata -outFolder . -rewriteAll
 
       - name: Rename index-en.html to index.html
-        run: mv doc/index-en.html doc/index.html
+        run: mv index-en.html index.html
       
       - name: Deploy Documentation to gh-pages branch
         uses: JamesIves/github-pages-deploy-action@v4
