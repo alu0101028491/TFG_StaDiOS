@@ -33,7 +33,7 @@ jobs:
           wget $WIDOCO_DOWNLOAD_URL --progress=dot:giga --output-document=jar/widoco.jar
           
       - name: Run Widoco
-        run: java -jar jar/widoco.jar -ontFile doc/StaDiOS.owl -oops -uniteSections -getOntologyMetadata -outFolder doc -rewriteAll
+        run: java -jar jar/widoco.jar -ontFile doc/StaDiOS.owl -oops -uniteSections -getOntologyMetadata -outFolder . -rewriteAll
 
       - name: Rename index-en.html to index.html
         run: mv doc/index-en.html doc/index.html
@@ -42,5 +42,5 @@ jobs:
         uses: JamesIves/github-pages-deploy-action@v4
         with:
           branch: doc
-          folder: doc
+          folder: .
           single-commit: true
