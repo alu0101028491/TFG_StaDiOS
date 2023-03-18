@@ -1,0 +1,46 @@
+# This is a basic workflow to help you get started with Actions
+
+name: Generate and publish ontology documentation
+
+# Controls when the workflow will run
+on:
+  # Triggers the workflow on push or pull request events but only for the "main" branch
+  push:
+    branches: [ "main" ]
+    
+permissions:
+  contents: write
+
+# A workflow run is made up of one or more jobs that can run sequentially or in parallel
+jobs:
+  doc:
+    runs-on: ubuntu-latest
+    env:
+      WIDOCO_DOWNLOAD_URL: https://github.com/dgarijo/Widoco/releases/download/v1.4.17/java-11-widoco-1.4.17-jar-with-dependencies.jar
+    steps:
+      - uses: actions/checkout@v3
+
+      - name: Cache Widoco
+        uses: actions/cache@v3
+        with:
+          path: jar
+          key: ${{ env.WIDOCO_DOWNLOAD_URL }}
+
+      - name: Download Widoco if it doesn't exist
+        run: |
+          mkdir -p jar
+          if test -f jar/widoco.jar; then echo "Widoco already exists, skipping download."; exit 0; fi
+          wget $WIDOCO_DOWNLOAD_URL --progress=dot:giga --output-document=jar/widoco.jar
+          
+      - name: Run Widoco
+        run: java -jar jar/widoco.jar -ontFile ontology/StaDiOS.owl -oops -uniteSections -getOntologyMetadata -outFolder . -rewriteAll
+
+      - name: Rename index-en.html to index.html
+        run: mv index-en.html index.html
+      
+      - name: Deploy Documentation to gh-pages branch
+        uses: JamesIves/github-pages-deploy-action@v4
+        with:
+          branch: doc
+          folder: .
+          single-commit: true
