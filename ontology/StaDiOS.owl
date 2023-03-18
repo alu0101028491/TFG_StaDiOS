@@ -1051,6 +1051,15 @@ Examples:
     
 
 
+    <!-- http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#hasStudyIdentifier -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#hasStudyIdentifier">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
     <!-- http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#hasTemporalBehavior -->
 
     <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#hasTemporalBehavior">
@@ -2113,6 +2122,52 @@ ANNUAL: the cost/utility indicates that the indicated value affects annually thr
     
 
 
+    <!-- http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#DefaultFollowUpCost -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#DefaultFollowUpCost">
+        <rdf:type rdf:resource="http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#Cost"/>
+        <hasAmount rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.0</hasAmount>
+        <hasCountry rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Default</hasCountry>
+        <hasCurrency rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Euro</hasCurrency>
+        <hasStudyIdentifier rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Default_study</hasStudyIdentifier>
+        <hasYear rdf:datatype="http://www.w3.org/2001/XMLSchema#short">2023</hasYear>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#DefaultFollowUpStrategy -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#DefaultFollowUpStrategy">
+        <rdf:type rdf:resource="http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#FollowUpStrategy"/>
+        <hasFollowUpStrategyCost rdf:resource="http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#DefaultFollowUpCost"/>
+        <hasDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Default follow-up strategy. Use when no follow-up information is needed</hasDescription>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#DefaultTreatmentCost -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#DefaultTreatmentCost">
+        <rdf:type rdf:resource="http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#Cost"/>
+        <hasAmount rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.0</hasAmount>
+        <hasCountry rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Default</hasCountry>
+        <hasCurrency rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Euro</hasCurrency>
+        <hasStudyIdentifier rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Default_study</hasStudyIdentifier>
+        <hasYear rdf:datatype="http://www.w3.org/2001/XMLSchema#short">2023</hasYear>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#DefaultTreatmentStrategy -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#DefaultTreatmentStrategy">
+        <rdf:type rdf:resource="http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#TreatmentStrategy"/>
+        <hasTreatmentStrategyCost rdf:resource="http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#DefaultTreatmentCost"/>
+        <hasDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Default treatment strategy. Use when no treatment information is needed</hasDescription>
+    </owl:NamedIndividual>
+    
+
+
     <!-- http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#GuidelineLifetimeAnual -->
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#GuidelineLifetimeAnual">
@@ -2135,6 +2190,7 @@ ANNUAL: the cost/utility indicates that the indicated value affects annually thr
         <hasOnSetAge rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.0</hasOnSetAge>
         <hasPopulationKind rdf:datatype="http://www.w3.org/2001/XMLSchema#string">NEONATAL</hasPopulationKind>
         <hasSize rdf:datatype="http://www.w3.org/2001/XMLSchema#int">540963</hasSize>
+        <hasStudyIdentifier rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PBD_001</hasStudyIdentifier>
         <hasYear rdf:datatype="http://www.w3.org/2001/XMLSchema#int">2013</hasYear>
     </owl:NamedIndividual>
     
@@ -2145,6 +2201,7 @@ ANNUAL: the cost/utility indicates that the indicated value affects annually thr
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#PBD_BasePopulationUtility">
         <rdf:type rdf:resource="http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#Utility"/>
         <hasCountry rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Spain</hasCountry>
+        <hasStudyIdentifier rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PBD_001</hasStudyIdentifier>
         <hasTemporalBehavior rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ANNUAL</hasTemporalBehavior>
         <hasUtilityKind rdf:datatype="http://www.w3.org/2001/XMLSchema#string">UTILITY</hasUtilityKind>
         <hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.8861</hasValue>
@@ -2161,6 +2218,7 @@ ANNUAL: the cost/utility indicates that the indicated value affects annually thr
         <hasCountry rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Spain</hasCountry>
         <hasCurrency rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Euro</hasCurrency>
         <hasDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Cost of annual use of biotin for profound biotinidase deficiency</hasDescription>
+        <hasStudyIdentifier rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PBD_001</hasStudyIdentifier>
         <hasTemporalBehavior rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ANNUAL</hasTemporalBehavior>
         <hasYear rdf:datatype="http://www.w3.org/2001/XMLSchema#short">2013</hasYear>
     </owl:NamedIndividual>
@@ -2199,6 +2257,7 @@ ANNUAL: the cost/utility indicates that the indicated value affects annually thr
         <hasCountry rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Spain</hasCountry>
         <hasCurrency rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Euro</hasCurrency>
         <hasDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Cost of diagnosis for profound BD in Spain. Includes retest for screening, two diagnostic tests and two blood extraction.</hasDescription>
+        <hasStudyIdentifier rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PBD_001</hasStudyIdentifier>
         <hasTemporalBehavior rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ONETIME</hasTemporalBehavior>
         <hasYear rdf:datatype="http://www.w3.org/2001/XMLSchema#short">2013</hasYear>
     </owl:NamedIndividual>
@@ -2235,6 +2294,7 @@ ANNUAL: the cost/utility indicates that the indicated value affects annually thr
         <hasAmount rdf:datatype="http://www.w3.org/2001/XMLSchema#double">20.2475</hasAmount>
         <hasCountry rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Germany</hasCountry>
         <hasCurrency rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Euro</hasCurrency>
+        <hasStudyIdentifier rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PBD_002</hasStudyIdentifier>
         <hasTemporalBehavior rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ANNUAL</hasTemporalBehavior>
         <hasYear rdf:datatype="http://www.w3.org/2001/XMLSchema#int">2018</hasYear>
     </owl:NamedIndividual>
@@ -2260,6 +2320,7 @@ ANNUAL: the cost/utility indicates that the indicated value affects annually thr
         <hasCountry rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Spain</hasCountry>
         <hasCurrency rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Euro</hasCurrency>
         <hasDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Cost for annual ophthalmologic, auditory, and medical geneticist or metabolic specialist evaluations, and urinary organic acid and acylcarnitine analyses</hasDescription>
+        <hasStudyIdentifier rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PBD_001</hasStudyIdentifier>
         <hasTemporalBehavior rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ANNUAL</hasTemporalBehavior>
         <hasYear rdf:datatype="http://www.w3.org/2001/XMLSchema#short">2013</hasYear>
     </owl:NamedIndividual>
@@ -2282,7 +2343,9 @@ ANNUAL: the cost/utility indicates that the indicated value affects annually thr
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#PBD_HearingProblemsManifestation">
         <rdf:type rdf:resource="http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#Manifestation"/>
         <hasManifestationCost rdf:resource="http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#PBD_HearingProblemsManifestationCost"/>
+        <hasManifestationFollowUpStrategy rdf:resource="http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#DefaultFollowUpStrategy"/>
         <hasManifestationFollowUpStrategy rdf:resource="http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#PBD_FollowUpStrategy"/>
+        <hasManifestationTreatmentStrategy rdf:resource="http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#DefaultTreatmentStrategy"/>
         <hasManifestationTreatmentStrategy rdf:resource="http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#PBD_BiotinTreatmentStrategy"/>
         <hasUtility rdf:resource="http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#PBD_HearingProblemsManifestationUtility"/>
         <hasEndAge rdf:datatype="http://www.w3.org/2001/XMLSchema#double">2.0</hasEndAge>
@@ -2304,6 +2367,7 @@ ANNUAL: the cost/utility indicates that the indicated value affects annually thr
         <hasCurrency rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Euro</hasCurrency>
         <hasDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Annual costs for hearing problems.</hasDescription>
         <hasInitialAmount rdf:datatype="http://www.w3.org/2001/XMLSchema#double">31169.95</hasInitialAmount>
+        <hasStudyIdentifier rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PBD_001</hasStudyIdentifier>
         <hasTemporalBehavior rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ANNUAL</hasTemporalBehavior>
         <hasYear rdf:datatype="http://www.w3.org/2001/XMLSchema#short">2013</hasYear>
     </owl:NamedIndividual>
@@ -2314,6 +2378,8 @@ ANNUAL: the cost/utility indicates that the indicated value affects annually thr
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#PBD_HearingProblemsManifestationUtility">
         <rdf:type rdf:resource="http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#Utility"/>
+        <hasCountry rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Spain</hasCountry>
+        <hasStudyIdentifier rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PBD_001</hasStudyIdentifier>
         <hasTemporalBehavior rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ANNUAL</hasTemporalBehavior>
         <hasUtilityKind rdf:datatype="http://www.w3.org/2001/XMLSchema#string">UTILITY</hasUtilityKind>
         <hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.8761</hasValue>
@@ -2327,7 +2393,9 @@ ANNUAL: the cost/utility indicates that the indicated value affects annually thr
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#PBD_HypotoniaManifestation">
         <rdf:type rdf:resource="http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#Manifestation"/>
         <hasManifestationCost rdf:resource="http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#PBD_HypotoniaManifestationCost"/>
+        <hasManifestationFollowUpStrategy rdf:resource="http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#DefaultFollowUpStrategy"/>
         <hasManifestationFollowUpStrategy rdf:resource="http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#PBD_FollowUpStrategy"/>
+        <hasManifestationTreatmentStrategy rdf:resource="http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#DefaultTreatmentStrategy"/>
         <hasManifestationTreatmentStrategy rdf:resource="http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#PBD_BiotinTreatmentStrategy"/>
         <hasUtility rdf:resource="http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#PBD_HypotoniaManifestationUtility"/>
         <hasEndAge rdf:datatype="http://www.w3.org/2001/XMLSchema#double">1.0</hasEndAge>
@@ -2347,6 +2415,7 @@ ANNUAL: the cost/utility indicates that the indicated value affects annually thr
         <hasCurrency rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Euro</hasCurrency>
         <hasDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Annual costs for hypotonia.</hasDescription>
         <hasInitialAmount rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.0</hasInitialAmount>
+        <hasStudyIdentifier rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PBD_001</hasStudyIdentifier>
         <hasTemporalBehavior rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ONETIME</hasTemporalBehavior>
         <hasYear rdf:datatype="http://www.w3.org/2001/XMLSchema#short">2013</hasYear>
     </owl:NamedIndividual>
@@ -2357,6 +2426,8 @@ ANNUAL: the cost/utility indicates that the indicated value affects annually thr
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#PBD_HypotoniaManifestationUtility">
         <rdf:type rdf:resource="http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#Utility"/>
+        <hasCountry rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Spain</hasCountry>
+        <hasStudyIdentifier rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PBD_001</hasStudyIdentifier>
         <hasUtilityKind rdf:datatype="http://www.w3.org/2001/XMLSchema#string">UTILITY</hasUtilityKind>
         <hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.886</hasValue>
         <hasValueProbabilityDistribution rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Beta(5.2,0.67)</hasValueProbabilityDistribution>
@@ -2369,8 +2440,10 @@ ANNUAL: the cost/utility indicates that the indicated value affects annually thr
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#PBD_InterventionNoScreening">
         <rdf:type rdf:resource="http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#Intervention"/>
         <hasInterventionDetectionStrategy rdf:resource="http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#PBD_ClinicalDiagnosisStrategy"/>
+        <hasInterventionFollowUpStrategy rdf:resource="http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#DefaultFollowUpStrategy"/>
         <hasInterventionFollowUpStrategy rdf:resource="http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#PBD_FollowUpStrategy"/>
         <hasInterventionPopulation rdf:resource="http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#PBD_BasePopulation"/>
+        <hasInterventionTreatmentStrategy rdf:resource="http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#DefaultTreatmentStrategy"/>
         <hasInterventionTreatmentStrategy rdf:resource="http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#PBD_BiotinTreatmentStrategy"/>
         <hasInterventionTreatmentStrategy rdf:resource="http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#PBD_FakeTreatmentStrategy"/>
         <hasInterventionKind rdf:datatype="http://www.w3.org/2001/XMLSchema#string">DIAGNOSIS</hasInterventionKind>
@@ -2383,8 +2456,10 @@ ANNUAL: the cost/utility indicates that the indicated value affects annually thr
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#PBD_InterventionScreening">
         <rdf:type rdf:resource="http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#Intervention"/>
         <hasInterventionDetectionStrategy rdf:resource="http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#PBD_ScreeningDetectionStrategy"/>
+        <hasInterventionFollowUpStrategy rdf:resource="http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#DefaultFollowUpStrategy"/>
         <hasInterventionFollowUpStrategy rdf:resource="http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#PBD_FollowUpStrategy"/>
         <hasInterventionPopulation rdf:resource="http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#PBD_BasePopulation"/>
+        <hasInterventionTreatmentStrategy rdf:resource="http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#DefaultTreatmentStrategy"/>
         <hasInterventionTreatmentStrategy rdf:resource="http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#PBD_BiotinTreatmentStrategy"/>
         <hasInterventionKind rdf:datatype="http://www.w3.org/2001/XMLSchema#string">SCREENING</hasInterventionKind>
     </owl:NamedIndividual>
@@ -2396,7 +2471,9 @@ ANNUAL: the cost/utility indicates that the indicated value affects annually thr
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#PBD_MentalDelayManifestation">
         <rdf:type rdf:resource="http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#Manifestation"/>
         <hasManifestationCost rdf:resource="http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#PBD_MentalDelayManifestationCost"/>
+        <hasManifestationFollowUpStrategy rdf:resource="http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#DefaultFollowUpStrategy"/>
         <hasManifestationFollowUpStrategy rdf:resource="http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#PBD_FollowUpStrategy"/>
+        <hasManifestationTreatmentStrategy rdf:resource="http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#DefaultTreatmentStrategy"/>
         <hasManifestationTreatmentStrategy rdf:resource="http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#PBD_BiotinTreatmentStrategy"/>
         <hasManifestationTreatmentStrategy rdf:resource="http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#PBD_FakeTreatmentStrategy"/>
         <hasUtility rdf:resource="http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#PBD_MentalDelayManifestationUtility"/>
@@ -2417,6 +2494,7 @@ ANNUAL: the cost/utility indicates that the indicated value affects annually thr
         <hasCurrency rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Euro</hasCurrency>
         <hasDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Annual costs for mental delay.</hasDescription>
         <hasInitialAmount rdf:datatype="http://www.w3.org/2001/XMLSchema#double">1218.02</hasInitialAmount>
+        <hasStudyIdentifier rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PBD_001</hasStudyIdentifier>
         <hasTemporalBehavior rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ANNUAL</hasTemporalBehavior>
         <hasYear rdf:datatype="http://www.w3.org/2001/XMLSchema#short">2013</hasYear>
     </owl:NamedIndividual>
@@ -2427,6 +2505,8 @@ ANNUAL: the cost/utility indicates that the indicated value affects annually thr
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#PBD_MentalDelayManifestationUtility">
         <rdf:type rdf:resource="http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#Utility"/>
+        <hasCountry rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Spain</hasCountry>
+        <hasStudyIdentifier rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PBD_001</hasStudyIdentifier>
         <hasUtilityKind rdf:datatype="http://www.w3.org/2001/XMLSchema#string">UTILITY</hasUtilityKind>
         <hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.8161</hasValue>
         <hasValueProbabilityDistribution rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Beta(1.71,0.39)</hasValueProbabilityDistribution>
@@ -2459,12 +2539,16 @@ ANNUAL: the cost/utility indicates that the indicated value affects annually thr
         <hasDetectionStrategy rdf:resource="http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#PBD_ClinicalDiagnosisStrategy"/>
         <hasDetectionStrategy rdf:resource="http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#PBD_ScreeningDetectionStrategy"/>
         <hasDiseaseDevelopments rdf:resource="http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#PBD_NaturalDevelopment"/>
+        <hasDiseaseFollowUpStrategy rdf:resource="http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#DefaultFollowUpStrategy"/>
         <hasDiseaseFollowUpStrategy rdf:resource="http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#PBD_FollowUpStrategy"/>
+        <hasDiseaseTreatmentStrategy rdf:resource="http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#DefaultTreatmentStrategy"/>
         <hasDiseaseTreatmentStrategy rdf:resource="http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#PBD_BiotinTreatmentStrategy"/>
         <hasDiseaseTreatmentStrategy rdf:resource="http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#PBD_FakeTreatmentStrategy"/>
         <hasInterventions rdf:resource="http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#PBD_InterventionNoScreening"/>
         <hasInterventions rdf:resource="http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#PBD_InterventionScreening"/>
         <hasReferences rdf:resource="http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#PBD_References"/>
+        <hasPrevalenceAtBirth rdf:datatype="http://www.w3.org/2001/XMLSchema#double">1.4788E-5</hasPrevalenceAtBirth>
+        <hasProbabilityDistribution rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Beta(8, 540955)</hasProbabilityDistribution>
         <hasRarity rdf:datatype="http://www.w3.org/2001/XMLSchema#string">RARE</hasRarity>
         <rdfs:isDefinedBy>https://bioportal.bioontology.org/ontologies/SNOMEDCT/?p=classes&amp;conceptid=http%3A%2F%2Fpurl.bioontology.org%2Fontology%2FSNOMEDCT%2F8808004&amp;jump_to_nav=true</rdfs:isDefinedBy>
         <rdfs:label>ProfoundBiotinidaseDeficiency</rdfs:label>
@@ -2507,6 +2591,7 @@ ANNUAL: the cost/utility indicates that the indicated value affects annually thr
         <hasCountry rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Spain</hasCountry>
         <hasCurrency rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Euro</hasCurrency>
         <hasDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Cost of screening test for profound biotinidase deficiency in Spain</hasDescription>
+        <hasStudyIdentifier rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PBD_001</hasStudyIdentifier>
         <hasTemporalBehavior rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ONETIME</hasTemporalBehavior>
         <hasYear rdf:datatype="http://www.w3.org/2001/XMLSchema#short">2013</hasYear>
     </owl:NamedIndividual>
@@ -2541,7 +2626,9 @@ ANNUAL: the cost/utility indicates that the indicated value affects annually thr
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#PBD_SeizureManifestation">
         <rdf:type rdf:resource="http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#Manifestation"/>
         <hasManifestationCost rdf:resource="http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#PBD_SeizureManifestationCost"/>
+        <hasManifestationFollowUpStrategy rdf:resource="http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#DefaultFollowUpStrategy"/>
         <hasManifestationFollowUpStrategy rdf:resource="http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#PBD_FollowUpStrategy"/>
+        <hasManifestationTreatmentStrategy rdf:resource="http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#DefaultTreatmentStrategy"/>
         <hasManifestationTreatmentStrategy rdf:resource="http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#PBD_BiotinTreatmentStrategy"/>
         <hasManifestationTreatmentStrategy rdf:resource="http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#PBD_FakeTreatmentStrategy"/>
         <hasUtility rdf:resource="http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#PBD_SeizureManifestationUtility"/>
@@ -2562,6 +2649,7 @@ ANNUAL: the cost/utility indicates that the indicated value affects annually thr
         <hasCurrency rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Euro</hasCurrency>
         <hasDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Annual costs for seizures.</hasDescription>
         <hasInitialAmount rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.0</hasInitialAmount>
+        <hasStudyIdentifier rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PBD_001</hasStudyIdentifier>
         <hasTemporalBehavior rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ANNUAL</hasTemporalBehavior>
         <hasYear rdf:datatype="http://www.w3.org/2001/XMLSchema#short">2013</hasYear>
     </owl:NamedIndividual>
@@ -2572,6 +2660,8 @@ ANNUAL: the cost/utility indicates that the indicated value affects annually thr
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#PBD_SeizureManifestationUtility">
         <rdf:type rdf:resource="http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#Utility"/>
+        <hasCountry rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Spain</hasCountry>
+        <hasStudyIdentifier rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PBD_001</hasStudyIdentifier>
         <hasUtilityKind rdf:datatype="http://www.w3.org/2001/XMLSchema#string">UTILITY</hasUtilityKind>
         <hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.8461</hasValue>
         <hasValueProbabilityDistribution rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Beta(1.65,0.3)</hasValueProbabilityDistribution>
@@ -2584,7 +2674,9 @@ ANNUAL: the cost/utility indicates that the indicated value affects annually thr
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#PBD_SkinProblemsManifestation">
         <rdf:type rdf:resource="http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#Manifestation"/>
         <hasManifestationCost rdf:resource="http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#PBD_SkinProblemsManifestationCost"/>
+        <hasManifestationFollowUpStrategy rdf:resource="http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#DefaultFollowUpStrategy"/>
         <hasManifestationFollowUpStrategy rdf:resource="http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#PBD_FollowUpStrategy"/>
+        <hasManifestationTreatmentStrategy rdf:resource="http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#DefaultTreatmentStrategy"/>
         <hasManifestationTreatmentStrategy rdf:resource="http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#PBD_BiotinTreatmentStrategy"/>
         <hasManifestationTreatmentStrategy rdf:resource="http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#PBD_FakeTreatmentStrategy"/>
         <hasUtility rdf:resource="http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#PBD_SkinProblemsManifestationUtility"/>
@@ -2605,6 +2697,7 @@ ANNUAL: the cost/utility indicates that the indicated value affects annually thr
         <hasCurrency rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Euro</hasCurrency>
         <hasDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Annual costs for skin problems.</hasDescription>
         <hasInitialAmount rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.0</hasInitialAmount>
+        <hasStudyIdentifier rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PBD_001</hasStudyIdentifier>
         <hasTemporalBehavior rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ONETIME</hasTemporalBehavior>
         <hasYear rdf:datatype="http://www.w3.org/2001/XMLSchema#short">2013</hasYear>
     </owl:NamedIndividual>
@@ -2615,6 +2708,8 @@ ANNUAL: the cost/utility indicates that the indicated value affects annually thr
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#PBD_SkinProblemsManifestationUtility">
         <rdf:type rdf:resource="http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#Utility"/>
+        <hasCountry rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Spain</hasCountry>
+        <hasStudyIdentifier rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PBD_001</hasStudyIdentifier>
         <hasUtilityKind rdf:datatype="http://www.w3.org/2001/XMLSchema#string">UTILITY</hasUtilityKind>
         <hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.8861</hasValue>
         <hasValueProbabilityDistribution rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Beta(5.2,0.67)</hasValueProbabilityDistribution>
@@ -2627,7 +2722,9 @@ ANNUAL: the cost/utility indicates that the indicated value affects annually thr
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#PBD_VisionLossManifestation">
         <rdf:type rdf:resource="http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#Manifestation"/>
         <hasManifestationCost rdf:resource="http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#PBD_VisionLossManifestationCost"/>
+        <hasManifestationFollowUpStrategy rdf:resource="http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#DefaultFollowUpStrategy"/>
         <hasManifestationFollowUpStrategy rdf:resource="http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#PBD_FollowUpStrategy"/>
+        <hasManifestationTreatmentStrategy rdf:resource="http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#DefaultTreatmentStrategy"/>
         <hasManifestationTreatmentStrategy rdf:resource="http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#PBD_BiotinTreatmentStrategy"/>
         <hasUtility rdf:resource="http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#PBD_VisionLossManifestationUtility"/>
         <hasOnSetAge rdf:datatype="http://www.w3.org/2001/XMLSchema#double">1.0</hasOnSetAge>
@@ -2646,6 +2743,7 @@ ANNUAL: the cost/utility indicates that the indicated value affects annually thr
         <hasCurrency rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Euro</hasCurrency>
         <hasDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Annual costs for vision loss.</hasDescription>
         <hasInitialAmount rdf:datatype="http://www.w3.org/2001/XMLSchema#double">251.8</hasInitialAmount>
+        <hasStudyIdentifier rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PBD_001</hasStudyIdentifier>
         <hasTemporalBehavior rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ANNUAL</hasTemporalBehavior>
         <hasYear rdf:datatype="http://www.w3.org/2001/XMLSchema#short">2013</hasYear>
     </owl:NamedIndividual>
@@ -2656,6 +2754,8 @@ ANNUAL: the cost/utility indicates that the indicated value affects annually thr
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#PBD_VisionLossManifestationUtility">
         <rdf:type rdf:resource="http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#Utility"/>
+        <hasCountry rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Spain</hasCountry>
+        <hasStudyIdentifier rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PBD_001</hasStudyIdentifier>
         <hasUtilityKind rdf:datatype="http://www.w3.org/2001/XMLSchema#string">UTILITY</hasUtilityKind>
         <hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.8861</hasValue>
         <hasValueProbabilityDistribution rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Beta((5.2,0.67)</hasValueProbabilityDistribution>
