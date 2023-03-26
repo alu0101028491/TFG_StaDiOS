@@ -651,26 +651,26 @@ By default = 1, for the Manifestations.</rdfs:comment>
     
 
 
-    <!-- http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#hasLifeExpentancy -->
+    <!-- http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#hasLifeExpectancy -->
 
-    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#hasLifeExpentancy">
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#hasLifeExpectancy">
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
     </owl:DatatypeProperty>
     
 
 
-    <!-- http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#hasLifeExpentancyModification -->
+    <!-- http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#hasLifeExpectancyModification -->
 
-    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#hasLifeExpentancyModification">
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#hasLifeExpectancyModification">
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
     </owl:DatatypeProperty>
     
 
 
-    <!-- http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#hasLifeExpentancyProbabilityDistribution -->
+    <!-- http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#hasLifeExpectancyProbabilityDistribution -->
 
-    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#hasLifeExpentancyProbabilityDistribution">
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#hasLifeExpectancyProbabilityDistribution">
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
     </owl:DatatypeProperty>
@@ -1336,12 +1336,6 @@ ANNUAL: the cost/utility indicates that the indicated value affects annually thr
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#hasLifeExpentancy"/>
-                <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
                 <owl:onProperty rdf:resource="http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#hasPrevalenceAtBirth"/>
                 <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
             </owl:Restriction>
@@ -1439,7 +1433,7 @@ ANNUAL: the cost/utility indicates that the indicated value affects annually thr
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#hasLifeExpentancyModification"/>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#hasLifeExpectancyModification"/>
                 <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
             </owl:Restriction>
         </rdfs:subClassOf>
@@ -1841,6 +1835,12 @@ ANNUAL: the cost/utility indicates that the indicated value affects annually thr
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#hasLifeExpectancy"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
                 <owl:onProperty rdf:resource="http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#hasMaleProportion"/>
                 <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
             </owl:Restriction>
@@ -2184,8 +2184,9 @@ ANNUAL: the cost/utility indicates that the indicated value affects annually thr
         <rdf:type rdf:resource="http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#Population"/>
         <hasPopulationUtility rdf:resource="http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#PBD_BasePopulationUtility"/>
         <hasCountry rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Spain</hasCountry>
-        <hasEndAge rdf:datatype="http://www.w3.org/2001/XMLSchema#double">1.0</hasEndAge>
+        <hasEndAge rdf:datatype="http://www.w3.org/2001/XMLSchema#double">2.0</hasEndAge>
         <hasFemaleProportion rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.5</hasFemaleProportion>
+        <hasLifeExpectancy rdf:datatype="http://www.w3.org/2001/XMLSchema#double">72.903078</hasLifeExpectancy>
         <hasMaleProportion rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.5</hasMaleProportion>
         <hasOnSetAge rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.0</hasOnSetAge>
         <hasPopulationKind rdf:datatype="http://www.w3.org/2001/XMLSchema#string">NEONATAL</hasPopulationKind>
@@ -2525,8 +2526,7 @@ ANNUAL: the cost/utility indicates that the indicated value affects annually thr
         <hasDevelopmentManifestations rdf:resource="http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#PBD_SkinProblemsManifestation"/>
         <hasDevelopmentManifestations rdf:resource="http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#PBD_VisionLossManifestation"/>
         <hasDevelopmentKind rdf:datatype="http://www.w3.org/2001/XMLSchema#string">NATURAL</hasDevelopmentKind>
-        <hasLifeExpentancy rdf:datatype="http://www.w3.org/2001/XMLSchema#double">82.272854</hasLifeExpentancy>
-        <hasLifeExpentancyProbabilityDistribution rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Gamma(25, 3.29)</hasLifeExpentancyProbabilityDistribution>
+        <hasLifeExpectancyProbabilityDistribution rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Gamma(25, 3.29)</hasLifeExpectancyProbabilityDistribution>
         <hasStage rdf:datatype="http://www.w3.org/2001/XMLSchema#short">0</hasStage>
     </owl:NamedIndividual>
     
