@@ -432,6 +432,15 @@
     
 
 
+    <!-- http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#hasAverageAge -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#hasAverageAge">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
+    </owl:DatatypeProperty>
+    
+
+
     <!-- http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#hasCalculationMethod -->
 
     <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#hasCalculationMethod">
@@ -2183,10 +2192,11 @@ ANNUAL: the cost/utility indicates that the indicated value affects annually thr
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#PBD_BasePopulation">
         <rdf:type rdf:resource="http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#Population"/>
         <hasPopulationUtility rdf:resource="http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#PBD_BasePopulationUtility"/>
+        <hasAverageAge rdf:datatype="http://www.w3.org/2001/XMLSchema#double">1.0</hasAverageAge>
         <hasCountry rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Spain</hasCountry>
         <hasEndAge rdf:datatype="http://www.w3.org/2001/XMLSchema#double">2.0</hasEndAge>
         <hasFemaleProportion rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.5</hasFemaleProportion>
-        <hasLifeExpectancy rdf:datatype="http://www.w3.org/2001/XMLSchema#double">72.903078</hasLifeExpectancy>
+        <hasLifeExpectancy rdf:datatype="http://www.w3.org/2001/XMLSchema#double">82.272854</hasLifeExpectancy>
         <hasMaleProportion rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.5</hasMaleProportion>
         <hasOnSetAge rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.0</hasOnSetAge>
         <hasPopulationKind rdf:datatype="http://www.w3.org/2001/XMLSchema#string">NEONATAL</hasPopulationKind>
@@ -2367,7 +2377,7 @@ ANNUAL: the cost/utility indicates that the indicated value affects annually thr
         <hasCountry rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Spain</hasCountry>
         <hasCurrency rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Euro</hasCurrency>
         <hasDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Annual costs for hearing problems.</hasDescription>
-        <hasInitialAmount rdf:datatype="http://www.w3.org/2001/XMLSchema#double">31169.95</hasInitialAmount>
+        <hasInitialAmount rdf:datatype="http://www.w3.org/2001/XMLSchema#double">43778.75</hasInitialAmount>
         <hasStudyIdentifier rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PBD_001</hasStudyIdentifier>
         <hasTemporalBehavior rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ANNUAL</hasTemporalBehavior>
         <hasYear rdf:datatype="http://www.w3.org/2001/XMLSchema#short">2013</hasYear>
@@ -2411,11 +2421,11 @@ ANNUAL: the cost/utility indicates that the indicated value affects annually thr
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#PBD_HypotoniaManifestationCost">
         <rdf:type rdf:resource="http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#Cost"/>
-        <hasAmount rdf:datatype="http://www.w3.org/2001/XMLSchema#double">3665.56</hasAmount>
+        <hasAmount rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.0</hasAmount>
         <hasCountry rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Spain</hasCountry>
         <hasCurrency rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Euro</hasCurrency>
         <hasDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Annual costs for hypotonia.</hasDescription>
-        <hasInitialAmount rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.0</hasInitialAmount>
+        <hasInitialAmount rdf:datatype="http://www.w3.org/2001/XMLSchema#double">3665.56</hasInitialAmount>
         <hasStudyIdentifier rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PBD_001</hasStudyIdentifier>
         <hasTemporalBehavior rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ONETIME</hasTemporalBehavior>
         <hasYear rdf:datatype="http://www.w3.org/2001/XMLSchema#short">2013</hasYear>
@@ -2430,7 +2440,7 @@ ANNUAL: the cost/utility indicates that the indicated value affects annually thr
         <hasCountry rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Spain</hasCountry>
         <hasStudyIdentifier rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PBD_001</hasStudyIdentifier>
         <hasUtilityKind rdf:datatype="http://www.w3.org/2001/XMLSchema#string">UTILITY</hasUtilityKind>
-        <hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.886</hasValue>
+        <hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.8861</hasValue>
         <hasValueProbabilityDistribution rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Beta(5.2,0.67)</hasValueProbabilityDistribution>
     </owl:NamedIndividual>
     
@@ -2494,7 +2504,7 @@ ANNUAL: the cost/utility indicates that the indicated value affects annually thr
         <hasCountry rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Spain</hasCountry>
         <hasCurrency rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Euro</hasCurrency>
         <hasDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Annual costs for mental delay.</hasDescription>
-        <hasInitialAmount rdf:datatype="http://www.w3.org/2001/XMLSchema#double">1218.02</hasInitialAmount>
+        <hasInitialAmount rdf:datatype="http://www.w3.org/2001/XMLSchema#double">16824.19</hasInitialAmount>
         <hasStudyIdentifier rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PBD_001</hasStudyIdentifier>
         <hasTemporalBehavior rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ANNUAL</hasTemporalBehavior>
         <hasYear rdf:datatype="http://www.w3.org/2001/XMLSchema#short">2013</hasYear>
@@ -2644,13 +2654,13 @@ ANNUAL: the cost/utility indicates that the indicated value affects annually thr
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#PBD_SeizureManifestationCost">
         <rdf:type rdf:resource="http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#Cost"/>
-        <hasAmount rdf:datatype="http://www.w3.org/2001/XMLSchema#double">3665.56</hasAmount>
+        <hasAmount rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.0</hasAmount>
         <hasCountry rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Spain</hasCountry>
         <hasCurrency rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Euro</hasCurrency>
         <hasDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Annual costs for seizures.</hasDescription>
-        <hasInitialAmount rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.0</hasInitialAmount>
+        <hasInitialAmount rdf:datatype="http://www.w3.org/2001/XMLSchema#double">3665.56</hasInitialAmount>
         <hasStudyIdentifier rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PBD_001</hasStudyIdentifier>
-        <hasTemporalBehavior rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ANNUAL</hasTemporalBehavior>
+        <hasTemporalBehavior rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ONETIME</hasTemporalBehavior>
         <hasYear rdf:datatype="http://www.w3.org/2001/XMLSchema#short">2013</hasYear>
     </owl:NamedIndividual>
     
@@ -2692,11 +2702,11 @@ ANNUAL: the cost/utility indicates that the indicated value affects annually thr
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#PBD_SkinProblemsManifestationCost">
         <rdf:type rdf:resource="http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#Cost"/>
-        <hasAmount rdf:datatype="http://www.w3.org/2001/XMLSchema#double">3665.56</hasAmount>
+        <hasAmount rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.0</hasAmount>
         <hasCountry rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Spain</hasCountry>
         <hasCurrency rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Euro</hasCurrency>
         <hasDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Annual costs for skin problems.</hasDescription>
-        <hasInitialAmount rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.0</hasInitialAmount>
+        <hasInitialAmount rdf:datatype="http://www.w3.org/2001/XMLSchema#double">3665.56</hasInitialAmount>
         <hasStudyIdentifier rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PBD_001</hasStudyIdentifier>
         <hasTemporalBehavior rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ONETIME</hasTemporalBehavior>
         <hasYear rdf:datatype="http://www.w3.org/2001/XMLSchema#short">2013</hasYear>
@@ -2742,7 +2752,7 @@ ANNUAL: the cost/utility indicates that the indicated value affects annually thr
         <hasCountry rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Spain</hasCountry>
         <hasCurrency rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Euro</hasCurrency>
         <hasDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Annual costs for vision loss.</hasDescription>
-        <hasInitialAmount rdf:datatype="http://www.w3.org/2001/XMLSchema#double">251.8</hasInitialAmount>
+        <hasInitialAmount rdf:datatype="http://www.w3.org/2001/XMLSchema#double">10155.44</hasInitialAmount>
         <hasStudyIdentifier rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PBD_001</hasStudyIdentifier>
         <hasTemporalBehavior rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ANNUAL</hasTemporalBehavior>
         <hasYear rdf:datatype="http://www.w3.org/2001/XMLSchema#short">2013</hasYear>
