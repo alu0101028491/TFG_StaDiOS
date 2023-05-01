@@ -1,0 +1,8 @@
+SELECT ?disease ?development ?followUpStrategy ?treatmentStrategy
+WHERE {
+    ?disease std:hasDiseaseDevelopments ?development .
+
+    ?disease std:hasInterventions ?intervention .
+    ?intervention std:hasInterventionFollowUpStrategy ?followUpStrategy;
+                  std:hasInterventionTreatmentStrategy ?treatmentStrategy .
+}

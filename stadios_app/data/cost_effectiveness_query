@@ -1,0 +1,50 @@
+SELECT ?disease ?intervention ?interventionKind ?populationKind ?populationAverageAge ?populationUtilityValue ?detectionStrategy ?sensitivity ?specificity ?prevalenceAtBirth ?detectionStrategyAmount ?detectionStrategyCurrency ?detectionStrategyYear ?development ?lifeExpectancy ?manifestation ?manifestationProbability ?manifestationInitialAmount ?manifestationAnnualAmount ?manifestationCurrency ?manifestationYear ?utilityValue ?utilityKind ?followUpStrategy ?followUpAmount ?followUpCurrency ?followUpYear ?treatmentStrategy ?treatmentStrategyAmount ?treatmentStrategyCurrency ?treatmentYear
+WHERE {
+    ?disease std:hasInterventions ?intervention;
+             std:hasPrevalenceAtBirth ?prevalenceAtBirth;
+             std:hasDiseaseDevelopments ?development .
+
+    ?intervention std:hasInterventionDetectionStrategy ?detectionStrategy;
+                  std:hasInterventionFollowUpStrategy ?followUpStrategy;
+                  std:hasInterventionTreatmentStrategy ?treatmentStrategy;
+                  std:hasInterventionKind ?interventionKind;
+  				  std:hasInterventionPopulation ?interventionPopulation.
+    ?interventionPopulation std:hasPopulationKind ?populationKind;
+                            std:hasAverageAge ?populationAverageAge;
+                            std:hasLifeExpectancy ?lifeExpectancy;
+                            std:hasStudyIdentifier ?studyIdentifier;
+                            std:hasPopulationUtility ?populationUtility .
+    ?populationUtility std:hasValue ?populationUtilityValue .
+
+    ?detectionStrategy std:hasDetectionStrategyCost ?detectionStrategyCost;
+                       std:hasSpecificity ?specificity;
+                       std:hasSensitivity ?sensitivity.
+    ?detectionStrategyCost std:hasAmount ?detectionStrategyAmount;
+                           std:hasCurrency ?detectionStrategyCurrency;
+                           std:hasYear ?detectionStrategyYear .
+
+    ?followUpStrategy std:hasFollowUpStrategyCost ?followUpStrategyCost .
+    ?followUpStrategyCost std:hasAmount ?followUpAmount;
+                          std:hasCurrency ?followUpCurrency;
+                          std:hasYear ?followUpYear.
+
+    ?treatmentStrategy std:hasTreatmentStrategyCost ?treatmentStrategyCost .
+    ?treatmentStrategyCost std:hasAmount ?treatmentStrategyAmount;
+                           std:hasCurrency ?treatmentStrategyCurrency;
+                           std:hasYear ?treatmentYear.
+
+    ?development std:hasDevelopmentManifestations ?manifestation .
+
+    ?manifestation std:hasManifestationTreatmentStrategy ?treatmentStrategy;
+                   std:hasManifestationCost ?manifestationCost;
+                   std:hasUtility ?utility;
+                   std:hasProbability ?manifestationProbability .
+    ?manifestationCost std:hasAmount ?manifestationAnnualAmount;
+                       std:hasInitialAmount ?manifestationInitialAmount;
+                       std:hasCurrency ?manifestationCurrency;
+                       std:hasYear ?manifestationYear;
+                       std:hasStudyIdentifier ?studyIdentifier .
+
+    ?utility std:hasValue ?utilityValue;
+             std:hasUtilityKind ?utilityKind;
+             std:hasStudyIdentifier ?studyIdentifier .

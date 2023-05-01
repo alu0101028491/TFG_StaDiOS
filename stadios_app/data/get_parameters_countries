@@ -1,0 +1,4 @@
+SELECT ?country
+WHERE {
+    ?x std:hasCountry ?country .
+}
