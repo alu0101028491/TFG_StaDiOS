@@ -7,7 +7,7 @@ This project proposes the development of a domain-specific ontology, called StaD
 It contains the definition of the StaDiOS ontology. This is an ontology designed to store information on health economic studies of any disease that allows structuring the information to facilitate the creation of economic analyses using decision trees, specifically cost-effectiveness analyses. 
 
 ## Cost-effectiveness directory
-Contiene y muestra las simulaciones e inferencias ontológicas realizadas previamente y nos da una aproximación de lo que necesitamos en la aplicación que hemos creado. También contiene parte de todos los archivos CSV generados.
+It contains and displays the simulations and ontological inferences previously performed and gives us an approximation of what we need in the application we have created. It also contains part of all the CSV files generated.
 
 ## Stadios-app directory
 It contains the code of the application implemented using the Streamlit framework. 
