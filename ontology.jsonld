@@ -1,0 +1,3590 @@
+[ {
+  "@id" : "_:genid1",
+  "@type" : [ "http://www.w3.org/2000/01/rdf-schema#Datatype" ],
+  "http://www.w3.org/2002/07/owl#oneOf" : [ {
+    "@list" : [ {
+      "@value" : "MODIFIED"
+    }, {
+      "@value" : "NATURAL"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid100",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#hasProbabilityOfDiagnosis"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#double"
+  } ]
+}, {
+  "@id" : "_:genid101",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#hasRelativeRisk"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#double"
+  } ]
+}, {
+  "@id" : "_:genid102",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onDataRange" : [ {
+    "@id" : "_:genid103"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#hasManifestationKind"
+  } ],
+  "http://www.w3.org/2002/07/owl#qualifiedCardinality" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
+    "@value" : "1"
+  } ]
+}, {
+  "@id" : "_:genid103",
+  "@type" : [ "http://www.w3.org/2000/01/rdf-schema#Datatype" ],
+  "http://www.w3.org/2002/07/owl#oneOf" : [ {
+    "@list" : [ {
+      "@value" : "ACUTE"
+    }, {
+      "@value" : "CHRONIC"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid106",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#hasDescription"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#string"
+  } ]
+}, {
+  "@id" : "_:genid107",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#hasModificationKind"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#string"
+  } ]
+}, {
+  "@id" : "_:genid108",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onDataRange" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#double"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#hasFrequencyModification"
+  } ],
+  "http://www.w3.org/2002/07/owl#qualifiedCardinality" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
+    "@value" : "1"
+  } ]
+}, {
+  "@id" : "_:genid109",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onDataRange" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#double"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#hasMortalityFactorModification"
+  } ],
+  "http://www.w3.org/2002/07/owl#qualifiedCardinality" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
+    "@value" : "1"
+  } ]
+}, {
+  "@id" : "_:genid11",
+  "@type" : [ "http://www.w3.org/2000/01/rdf-schema#Datatype" ],
+  "http://www.w3.org/2002/07/owl#oneOf" : [ {
+    "@list" : [ {
+      "@value" : "DIFF"
+    }, {
+      "@value" : "RR"
+    }, {
+      "@value" : "SET"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid110",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onDataRange" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#double"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#hasProbabilityModification"
+  } ],
+  "http://www.w3.org/2002/07/owl#qualifiedCardinality" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
+    "@value" : "1"
+  } ]
+}, {
+  "@id" : "_:genid111",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onDataRange" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#double"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#hasProbabilityOfDiagnosisModification"
+  } ],
+  "http://www.w3.org/2002/07/owl#qualifiedCardinality" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
+    "@value" : "1"
+  } ]
+}, {
+  "@id" : "_:genid112",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onDataRange" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#double"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#hasRelativeRiskModification"
+  } ],
+  "http://www.w3.org/2002/07/owl#qualifiedCardinality" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
+    "@value" : "1"
+  } ]
+}, {
+  "@id" : "_:genid113",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#hasCountry"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#string"
+  } ]
+}, {
+  "@id" : "_:genid114",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#hasCountryContext"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#string"
+  } ]
+}, {
+  "@id" : "_:genid115",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#hasDescription"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#string"
+  } ]
+}, {
+  "@id" : "_:genid116",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#hasEndAge"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#double"
+  } ]
+}, {
+  "@id" : "_:genid117",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#hasFemaleProportion"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#double"
+  } ]
+}, {
+  "@id" : "_:genid118",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#hasLifeExpectancy"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#double"
+  } ]
+}, {
+  "@id" : "_:genid119",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#hasMaleProportion"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#double"
+  } ]
+}, {
+  "@id" : "_:genid120",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#hasOnSetAge"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#double"
+  } ]
+}, {
+  "@id" : "_:genid121",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#hasSize"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#int"
+  } ]
+}, {
+  "@id" : "_:genid122",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#hasSource"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#string"
+  } ]
+}, {
+  "@id" : "_:genid123",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#hasYear"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#short"
+  } ]
+}, {
+  "@id" : "_:genid124",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#hasDescription"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#string"
+  } ]
+}, {
+  "@id" : "_:genid125",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#hasCondition"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#string"
+  } ]
+}, {
+  "@id" : "_:genid126",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#hasDescription"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#string"
+  } ]
+}, {
+  "@id" : "_:genid127",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onDataRange" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#double"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#hasPercentForNext"
+  } ],
+  "http://www.w3.org/2002/07/owl#qualifiedCardinality" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
+    "@value" : "1"
+  } ]
+}, {
+  "@id" : "_:genid128",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onDataRange" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#int"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#hasStepOrder"
+  } ],
+  "http://www.w3.org/2002/07/owl#qualifiedCardinality" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
+    "@value" : "1"
+  } ]
+}, {
+  "@id" : "_:genid129",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#hasDescription"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#string"
+  } ]
+}, {
+  "@id" : "_:genid130",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#hasPercentageTreated"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#string"
+  } ]
+}, {
+  "@id" : "_:genid131",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onDataRange" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#string"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#hasIdentifier"
+  } ],
+  "http://www.w3.org/2002/07/owl#qualifiedCardinality" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
+    "@value" : "1"
+  } ]
+}, {
+  "@id" : "_:genid132",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#hasDescription"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#string"
+  } ]
+}, {
+  "@id" : "_:genid133",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#hasPercentageTreated"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#string"
+  } ]
+}, {
+  "@id" : "_:genid134",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#hasCalculationMethod"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#string"
+  } ]
+}, {
+  "@id" : "_:genid135",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#hasCountry"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#string"
+  } ]
+}, {
+  "@id" : "_:genid136",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#hasDescription"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#string"
+  } ]
+}, {
+  "@id" : "_:genid137",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#hasSource"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#string"
+  } ]
+}, {
+  "@id" : "_:genid138",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#hasValue"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#double"
+  } ]
+}, {
+  "@id" : "_:genid139",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#hasYear"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#short"
+  } ]
+}, {
+  "@id" : "_:genid140",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onDataRange" : [ {
+    "@id" : "_:genid141"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#hasTemporalBehavior"
+  } ],
+  "http://www.w3.org/2002/07/owl#qualifiedCardinality" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
+    "@value" : "1"
+  } ]
+}, {
+  "@id" : "_:genid141",
+  "@type" : [ "http://www.w3.org/2000/01/rdf-schema#Datatype" ],
+  "http://www.w3.org/2002/07/owl#oneOf" : [ {
+    "@list" : [ {
+      "@value" : "ANNUAL"
+    }, {
+      "@value" : "LIFETIME"
+    }, {
+      "@value" : "ONETIME"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid145",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onDataRange" : [ {
+    "@id" : "_:genid146"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#hasUtilityKind"
+  } ],
+  "http://www.w3.org/2002/07/owl#qualifiedCardinality" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
+    "@value" : "1"
+  } ]
+}, {
+  "@id" : "_:genid146",
+  "@type" : [ "http://www.w3.org/2000/01/rdf-schema#Datatype" ],
+  "http://www.w3.org/2002/07/owl#oneOf" : [ {
+    "@list" : [ {
+      "@value" : "DISUTILITY"
+    }, {
+      "@value" : "UTILITY"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid149",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AllDisjointClasses" ],
+  "http://www.w3.org/2002/07/owl#members" : [ {
+    "@list" : [ {
+      "@id" : "http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#ClinicalDiagnosisDetectionStepStrategy"
+    }, {
+      "@id" : "http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#FollowUpStepStrategy"
+    }, {
+      "@id" : "http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#ScreeningDetectionStepStrategy"
+    }, {
+      "@id" : "http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#TreatmentStepStrategy"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid15",
+  "@type" : [ "http://www.w3.org/2000/01/rdf-schema#Datatype" ],
+  "http://www.w3.org/2002/07/owl#oneOf" : [ {
+    "@list" : [ {
+      "@value" : "ADOLESCENT"
+    }, {
+      "@value" : "ADULT"
+    }, {
+      "@value" : "ELDERLY"
+    }, {
+      "@value" : "INFANT"
+    }, {
+      "@value" : "NEONATAL"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid154",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AllDisjointClasses" ],
+  "http://www.w3.org/2002/07/owl#members" : [ {
+    "@list" : [ {
+      "@id" : "http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#Cost"
+    }, {
+      "@id" : "http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#Detection"
+    }, {
+      "@id" : "http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#DetectionStrategy"
+    }, {
+      "@id" : "http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#Development"
+    }, {
+      "@id" : "http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#DevelopmentModification"
+    }, {
+      "@id" : "http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#Disease"
+    }, {
+      "@id" : "http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#Drug"
+    }, {
+      "@id" : "http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#FollowUp"
+    }, {
+      "@id" : "http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#FollowUpStrategy"
+    }, {
+      "@id" : "http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#Guidelines"
+    }, {
+      "@id" : "http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#Intervention"
+    }, {
+      "@id" : "http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#Manifestation"
+    }, {
+      "@id" : "http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#ManifestationModification"
+    }, {
+      "@id" : "http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#Population"
+    }, {
+      "@id" : "http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#Reference"
+    }, {
+      "@id" : "http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#StepStrategy"
+    }, {
+      "@id" : "http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#Treatment"
+    }, {
+      "@id" : "http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#TreatmentStrategy"
+    }, {
+      "@id" : "http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#Utility"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid21",
+  "@type" : [ "http://www.w3.org/2000/01/rdf-schema#Datatype" ],
+  "http://www.w3.org/2002/07/owl#oneOf" : [ {
+    "@list" : [ {
+      "@value" : "CLASSIC"
+    }, {
+      "@value" : "NON-CLASSIC"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid24",
+  "@type" : [ "http://www.w3.org/2000/01/rdf-schema#Datatype" ],
+  "http://www.w3.org/2002/07/owl#oneOf" : [ {
+    "@list" : [ {
+      "@value" : "COMMON"
+    }, {
+      "@value" : "RARE"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid27",
+  "@type" : [ "http://www.w3.org/2000/01/rdf-schema#Datatype" ],
+  "http://www.w3.org/2002/07/owl#oneOf" : [ {
+    "@list" : [ {
+      "@value" : "ANNUAL"
+    }, {
+      "@value" : "LIFETIME"
+    }, {
+      "@value" : "ONETIME"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid31",
+  "@type" : [ "http://www.w3.org/2000/01/rdf-schema#Datatype" ],
+  "http://www.w3.org/2002/07/owl#oneOf" : [ {
+    "@list" : [ {
+      "@value" : "DISUTILITY"
+    }, {
+      "@value" : "UTILITY"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid34",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#hasAmount"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#double"
+  } ]
+}, {
+  "@id" : "_:genid35",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#hasCountry"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#string"
+  } ]
+}, {
+  "@id" : "_:genid36",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#hasCountryContext"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#string"
+  } ]
+}, {
+  "@id" : "_:genid37",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#hasCurrency"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#string"
+  } ]
+}, {
+  "@id" : "_:genid38",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#hasDescription"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#string"
+  } ]
+}, {
+  "@id" : "_:genid39",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#hasInitialAmount"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#double"
+  } ]
+}, {
+  "@id" : "_:genid4",
+  "@type" : [ "http://www.w3.org/2000/01/rdf-schema#Datatype" ],
+  "http://www.w3.org/2002/07/owl#oneOf" : [ {
+    "@list" : [ {
+      "@value" : "DIAGNOSIS"
+    }, {
+      "@value" : "GENERAL"
+    }, {
+      "@value" : "SCREENING"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid40",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#hasSource"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#string"
+  } ]
+}, {
+  "@id" : "_:genid41",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#hasYear"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#short"
+  } ]
+}, {
+  "@id" : "_:genid42",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onDataRange" : [ {
+    "@id" : "_:genid43"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#hasTemporalBehavior"
+  } ],
+  "http://www.w3.org/2002/07/owl#qualifiedCardinality" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
+    "@value" : "1"
+  } ]
+}, {
+  "@id" : "_:genid43",
+  "@type" : [ "http://www.w3.org/2000/01/rdf-schema#Datatype" ],
+  "http://www.w3.org/2002/07/owl#oneOf" : [ {
+    "@list" : [ {
+      "@value" : "ANNUAL"
+    }, {
+      "@value" : "LIFETIME"
+    }, {
+      "@value" : "ONETIME"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid47",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#hasDescription"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#string"
+  } ]
+}, {
+  "@id" : "_:genid48",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#hasIdentifier"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#string"
+  } ]
+}, {
+  "@id" : "_:genid49",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#hasSensitivity"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#double"
+  } ]
+}, {
+  "@id" : "_:genid50",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#hasSpecificity"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#double"
+  } ]
+}, {
+  "@id" : "_:genid51",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#hasDescription"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#string"
+  } ]
+}, {
+  "@id" : "_:genid52",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#hasDescription"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#string"
+  } ]
+}, {
+  "@id" : "_:genid53",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#hasPrevalenceAtBirth"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#double"
+  } ]
+}, {
+  "@id" : "_:genid54",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#hasStage"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#short"
+  } ]
+}, {
+  "@id" : "_:genid55",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onDataRange" : [ {
+    "@id" : "_:genid56"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#hasDevelopmentKind"
+  } ],
+  "http://www.w3.org/2002/07/owl#qualifiedCardinality" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
+    "@value" : "1"
+  } ]
+}, {
+  "@id" : "_:genid56",
+  "@type" : [ "http://www.w3.org/2000/01/rdf-schema#Datatype" ],
+  "http://www.w3.org/2002/07/owl#oneOf" : [ {
+    "@list" : [ {
+      "@value" : "MODIFIED"
+    }, {
+      "@value" : "NATURAL"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid59",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onDataRange" : [ {
+    "@id" : "_:genid60"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#hasEtiology"
+  } ],
+  "http://www.w3.org/2002/07/owl#qualifiedCardinality" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
+    "@value" : "1"
+  } ]
+}, {
+  "@id" : "_:genid60",
+  "@type" : [ "http://www.w3.org/2000/01/rdf-schema#Datatype" ],
+  "http://www.w3.org/2002/07/owl#oneOf" : [ {
+    "@list" : [ {
+      "@value" : "GENETIC"
+    }, {
+      "@value" : "NON-GENETIC"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid63",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onDataRange" : [ {
+    "@id" : "_:genid64"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#hasPresentation"
+  } ],
+  "http://www.w3.org/2002/07/owl#qualifiedCardinality" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
+    "@value" : "1"
+  } ]
+}, {
+  "@id" : "_:genid64",
+  "@type" : [ "http://www.w3.org/2000/01/rdf-schema#Datatype" ],
+  "http://www.w3.org/2002/07/owl#oneOf" : [ {
+    "@list" : [ {
+      "@value" : "CLASSIC"
+    }, {
+      "@value" : "NON-CLASSIC"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid67",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#hasDescription"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#string"
+  } ]
+}, {
+  "@id" : "_:genid68",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#hasLifeExpectancyModification"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#string"
+  } ]
+}, {
+  "@id" : "_:genid69",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#hasModificationKind"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#string"
+  } ]
+}, {
+  "@id" : "_:genid70",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#hasDescription"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#string"
+  } ]
+}, {
+  "@id" : "_:genid71",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#hasIdentifier"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#string"
+  } ]
+}, {
+  "@id" : "_:genid72",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#hasRarity"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "_:genid73"
+  } ]
+}, {
+  "@id" : "_:genid73",
+  "@type" : [ "http://www.w3.org/2000/01/rdf-schema#Datatype" ],
+  "http://www.w3.org/2002/07/owl#oneOf" : [ {
+    "@list" : [ {
+      "@value" : "NOT-RARE"
+    }, {
+      "@value" : "RARE"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid76",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#hasDescription"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#string"
+  } ]
+}, {
+  "@id" : "_:genid77",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#hasDose"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#double"
+  } ]
+}, {
+  "@id" : "_:genid78",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#hasHoursInterval"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#double"
+  } ]
+}, {
+  "@id" : "_:genid79",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#hasIdentifier"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#string"
+  } ]
+}, {
+  "@id" : "_:genid8",
+  "@type" : [ "http://www.w3.org/2000/01/rdf-schema#Datatype" ],
+  "http://www.w3.org/2002/07/owl#oneOf" : [ {
+    "@list" : [ {
+      "@value" : "ACUTE"
+    }, {
+      "@value" : "CHRONIC"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid80",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#hasDescription"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#string"
+  } ]
+}, {
+  "@id" : "_:genid81",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onDataRange" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#string"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#hasIdentifier"
+  } ],
+  "http://www.w3.org/2002/07/owl#qualifiedCardinality" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
+    "@value" : "1"
+  } ]
+}, {
+  "@id" : "_:genid82",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#hasDescription"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#string"
+  } ]
+}, {
+  "@id" : "_:genid83",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#hasDescription"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#string"
+  } ]
+}, {
+  "@id" : "_:genid84",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#minQualifiedCardinality" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
+    "@value" : "0"
+  } ],
+  "http://www.w3.org/2002/07/owl#onDataRange" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#double"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#hasConditions"
+  } ]
+}, {
+  "@id" : "_:genid85",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#minQualifiedCardinality" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
+    "@value" : "0"
+  } ],
+  "http://www.w3.org/2002/07/owl#onDataRange" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#double"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#hasDose"
+  } ]
+}, {
+  "@id" : "_:genid86",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#minQualifiedCardinality" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
+    "@value" : "0"
+  } ],
+  "http://www.w3.org/2002/07/owl#onDataRange" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#double"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#hasFrequency"
+  } ]
+}, {
+  "@id" : "_:genid87",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#minQualifiedCardinality" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
+    "@value" : "0"
+  } ],
+  "http://www.w3.org/2002/07/owl#onDataRange" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#double"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#hasHoursInterval"
+  } ]
+}, {
+  "@id" : "_:genid88",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#minQualifiedCardinality" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
+    "@value" : "0"
+  } ],
+  "http://www.w3.org/2002/07/owl#onDataRange" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#double"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#hasPercentForNext"
+  } ]
+}, {
+  "@id" : "_:genid89",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#minQualifiedCardinality" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
+    "@value" : "0"
+  } ],
+  "http://www.w3.org/2002/07/owl#onDataRange" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#string"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#hasRange"
+  } ]
+}, {
+  "@id" : "_:genid90",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#hasDescription"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#string"
+  } ]
+}, {
+  "@id" : "_:genid91",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#hasInterventionKind"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#string"
+  } ]
+}, {
+  "@id" : "_:genid92",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#hasDescription"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#string"
+  } ]
+}, {
+  "@id" : "_:genid93",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#hasDuration"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#double"
+  } ]
+}, {
+  "@id" : "_:genid94",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#hasEndAge"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#double"
+  } ]
+}, {
+  "@id" : "_:genid95",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#hasFrequency"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#double"
+  } ]
+}, {
+  "@id" : "_:genid96",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#hasIdentifier"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#string"
+  } ]
+}, {
+  "@id" : "_:genid97",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#hasMortalityFactor"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#double"
+  } ]
+}, {
+  "@id" : "_:genid98",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#hasOnSetAge"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#double"
+  } ]
+}, {
+  "@id" : "_:genid99",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#hasProbability"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#double"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Ontology" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Ontology for the standard description of diseases and the generation of knowledge bases to facilitate cost-utility studies."
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#ClinicalDiagnosis",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "The process of identifying a disease, condition, or injury based on the signs and symptoms a patient is having and the patient’s health history and physical exam. Further testing, such as blood tests, imaging tests, and biopsies, may be done after a clinical diagnosis is made."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@value" : "https://www.cancer.gov/publications/dictionaries/cancer-terms/def/clinical-diagnosis"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "ClinicalDiagnosis"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#Detection"
+  } ],
+  "http://www.w3.org/2002/07/owl#disjointWith" : [ {
+    "@id" : "http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#Screening"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#ClinicalDiagnosisDetectionStepStrategy",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Describes the various steps involved in completing a clinical diagnosis procedure."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "ClinicalDiagnosisDetectionStepStrategy"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#StepStrategy"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#ClinicalDiagnosisDetectionStrategy",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "The process of identifying a disease, condition, or injury based on the signs and symptoms a patient is having and the patient’s health history and physical exam. Further testing, such as blood tests, imaging tests, and biopsies, may be done after a clinical diagnosis is made."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@value" : "https://www.cancer.gov/publications/dictionaries/cancer-terms/def/clinical-diagnosis"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "ClinicalDiagnosisDetectionStrategy"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#DetectionStrategy"
+  } ],
+  "http://www.w3.org/2002/07/owl#disjointWith" : [ {
+    "@id" : "http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#ScreeningDetectionStrategy"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#Cost",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Stores the details related to the economic value of the resources involved in interventions, treatments, follow-up tests, etc."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Cost"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "_:genid34"
+  }, {
+    "@id" : "_:genid35"
+  }, {
+    "@id" : "_:genid36"
+  }, {
+    "@id" : "_:genid37"
+  }, {
+    "@id" : "_:genid38"
+  }, {
+    "@id" : "_:genid39"
+  }, {
+    "@id" : "_:genid40"
+  }, {
+    "@id" : "_:genid41"
+  }, {
+    "@id" : "_:genid42"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#DefaultFollowUpCost",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#hasAmount" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#double",
+    "@value" : "0.0"
+  } ],
+  "http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#hasCountry" : [ {
+    "@value" : "Default"
+  } ],
+  "http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#hasCurrency" : [ {
+    "@value" : "Euro"
+  } ],
+  "http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#hasStudyIdentifier" : [ {
+    "@value" : "Default_study"
+  } ],
+  "http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#hasYear" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#short",
+    "@value" : "2023"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#Cost"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#DefaultFollowUpStrategy",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#hasDescription" : [ {
+    "@value" : "Default follow-up strategy. Use when no follow-up information is needed"
+  } ],
+  "http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#hasFollowUpStrategyCost" : [ {
+    "@id" : "http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#DefaultFollowUpCost"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#FollowUpStrategy"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#DefaultTreatmentCost",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#hasAmount" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#double",
+    "@value" : "0.0"
+  } ],
+  "http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#hasCountry" : [ {
+    "@value" : "Default"
+  } ],
+  "http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#hasCurrency" : [ {
+    "@value" : "Euro"
+  } ],
+  "http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#hasStudyIdentifier" : [ {
+    "@value" : "Default_study"
+  } ],
+  "http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#hasYear" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#short",
+    "@value" : "2023"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#Cost"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#DefaultTreatmentStrategy",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#hasDescription" : [ {
+    "@value" : "Default treatment strategy. Use when no treatment information is needed"
+  } ],
+  "http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#hasTreatmentStrategyCost" : [ {
+    "@id" : "http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#DefaultTreatmentCost"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#TreatmentStrategy"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#Detection",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "It contains the information necessary to quantitatively analyze a given screening procedure applied to a specific disease."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Detection"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "_:genid47"
+  }, {
+    "@id" : "_:genid48"
+  }, {
+    "@id" : "_:genid49"
+  }, {
+    "@id" : "_:genid50"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#DetectionStrategy",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Describes the different strategies to be studied for the detection of a given disease."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "DetectionStrategy"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "_:genid51"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#Development",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Describes a certain progression of a disease that comprises a specific set of manifestations."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#anyURI",
+    "@value" : "http://purl.obolibrary.org/obo/MONDO_0021125"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Development"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "_:genid52"
+  }, {
+    "@id" : "_:genid53"
+  }, {
+    "@id" : "_:genid54"
+  }, {
+    "@id" : "_:genid55"
+  }, {
+    "@id" : "_:genid59"
+  }, {
+    "@id" : "_:genid63"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#DevelopmentModification",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Contains the possible modifications that an intervention may have on the parameters of the development of a disease."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#anyURI",
+    "@value" : "http://purl.obolibrary.org/obo/MONDO_0021125"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "DevelopmentModification"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "_:genid67"
+  }, {
+    "@id" : "_:genid68"
+  }, {
+    "@id" : "_:genid69"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#Disease",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Standard definition of diseases and their possible characteristics"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#anyURI",
+    "@value" : "http://purl.bioontology.org/ontology/SNOMEDCT/64572001"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Disease"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "_:genid70"
+  }, {
+    "@id" : "_:genid71"
+  }, {
+    "@id" : "_:genid72"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#Drug",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "A natural or synthetic remedy for a disease or manifestation"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Drug"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "_:genid76"
+  }, {
+    "@id" : "_:genid77"
+  }, {
+    "@id" : "_:genid78"
+  }, {
+    "@id" : "_:genid79"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#FollowUp",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "It contains the information necessary to quantitatively analyze a given follow up procedure applied to a specific disease."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "FollowUp"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "_:genid80"
+  }, {
+    "@id" : "_:genid81"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#FollowUpStepStrategy",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Describes the various steps involved in completing a follow up  procedure."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "FollowUpStepStrategy"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#StepStrategy"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#FollowUpStrategy",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "It encompasses the different procedures at a general level that must be followed for the follow up of a specific disease."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "FollowUpStrategy"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "_:genid82"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#GuidelineLifetimeAnual",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#hasFrequency" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#double",
+    "@value" : "1.0"
+  } ],
+  "http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#hasRange" : [ {
+    "@value" : "0y"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#Guidelines"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#Guidelines",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "The way a treatment, drug, test... is applied. It may consist on more than one GuidelineRange, each one defining the timing, dose, etc, during a period of time"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Guidelines"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "_:genid83"
+  }, {
+    "@id" : "_:genid84"
+  }, {
+    "@id" : "_:genid85"
+  }, {
+    "@id" : "_:genid86"
+  }, {
+    "@id" : "_:genid87"
+  }, {
+    "@id" : "_:genid88"
+  }, {
+    "@id" : "_:genid89"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#Intervention",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Defines technologies or procedures used to modify the natural history of the disease."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Intervention"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "_:genid90"
+  }, {
+    "@id" : "_:genid91"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#Manifestation",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "It contains the symptoms and signs of a disease under a certain context."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Manifestation"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "_:genid92"
+  }, {
+    "@id" : "_:genid93"
+  }, {
+    "@id" : "_:genid94"
+  }, {
+    "@id" : "_:genid95"
+  }, {
+    "@id" : "_:genid96"
+  }, {
+    "@id" : "_:genid97"
+  }, {
+    "@id" : "_:genid98"
+  }, {
+    "@id" : "_:genid99"
+  }, {
+    "@id" : "_:genid100"
+  }, {
+    "@id" : "_:genid101"
+  }, {
+    "@id" : "_:genid102"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#ManifestationModification",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Contains the possible modifications that an intervention may have on the parameters of the manifestation of a disease."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "ManifestationModification"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "_:genid106"
+  }, {
+    "@id" : "_:genid107"
+  }, {
+    "@id" : "_:genid108"
+  }, {
+    "@id" : "_:genid109"
+  }, {
+    "@id" : "_:genid110"
+  }, {
+    "@id" : "_:genid111"
+  }, {
+    "@id" : "_:genid112"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#PBD_BasePopulation",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#hasAverageAge" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#double",
+    "@value" : "1.0"
+  } ],
+  "http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#hasCountry" : [ {
+    "@value" : "Spain"
+  } ],
+  "http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#hasEndAge" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#double",
+    "@value" : "2.0"
+  } ],
+  "http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#hasFemaleProportion" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#double",
+    "@value" : "0.5"
+  } ],
+  "http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#hasLifeExpectancy" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#double",
+    "@value" : "82.272854"
+  } ],
+  "http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#hasMaleProportion" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#double",
+    "@value" : "0.5"
+  } ],
+  "http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#hasOnSetAge" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#double",
+    "@value" : "0.0"
+  } ],
+  "http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#hasPopulationKind" : [ {
+    "@value" : "NEONATAL"
+  } ],
+  "http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#hasPopulationUtility" : [ {
+    "@id" : "http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#PBD_BasePopulationUtility"
+  } ],
+  "http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#hasSize" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#int",
+    "@value" : "540963"
+  } ],
+  "http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#hasStudyIdentifier" : [ {
+    "@value" : "PBD_001"
+  } ],
+  "http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#hasYear" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#int",
+    "@value" : "2013"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#Population"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#PBD_BasePopulationUtility",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#hasCountry" : [ {
+    "@value" : "Spain"
+  } ],
+  "http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#hasStudyIdentifier" : [ {
+    "@value" : "PBD_001"
+  } ],
+  "http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#hasTemporalBehavior" : [ {
+    "@value" : "ANNUAL"
+  } ],
+  "http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#hasUtilityKind" : [ {
+    "@value" : "UTILITY"
+  } ],
+  "http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#hasValue" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#double",
+    "@value" : "0.8861"
+  } ],
+  "http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#hasYear" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#int",
+    "@value" : "2013"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#Utility"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#PBD_BiotinTreatmentCost",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#hasAmount" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#double",
+    "@value" : "66.2475"
+  } ],
+  "http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#hasCountry" : [ {
+    "@value" : "Spain"
+  } ],
+  "http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#hasCurrency" : [ {
+    "@value" : "Euro"
+  } ],
+  "http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#hasDescription" : [ {
+    "@value" : "Cost of annual use of biotin for profound biotinidase deficiency"
+  } ],
+  "http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#hasStudyIdentifier" : [ {
+    "@value" : "PBD_001"
+  } ],
+  "http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#hasTemporalBehavior" : [ {
+    "@value" : "ANNUAL"
+  } ],
+  "http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#hasYear" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#short",
+    "@value" : "2013"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#Cost"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#PBD_BiotinTreatmentStrategy",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#hasDescription" : [ {
+    "@value" : "Lifetime treatment with biotin"
+  } ],
+  "http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#hasTreatmentStrategyCost" : [ {
+    "@id" : "http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#PBD_BiotinTreatmentCost"
+  } ],
+  "http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#hasTreatmentStrategyGuidelines" : [ {
+    "@id" : "http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#GuidelineLifetimeAnual"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#TreatmentStrategy"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#PBD_ClinicalDiagnosis",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#hasDetectionCost" : [ {
+    "@id" : "http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#PBD_ClinicalDiagnosisCost"
+  } ],
+  "http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#hasSensitivity" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#double",
+    "@value" : "1.0"
+  } ],
+  "http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#hasSpecificity" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#double",
+    "@value" : "0.999935"
+  } ],
+  "http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#hasSpecificityProbabilityDistribution" : [ {
+    "@value" : "Beta(540904,35)"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#ClinicalDiagnosis"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#PBD_ClinicalDiagnosisCost",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#hasAmount" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#double",
+    "@value" : "509.65"
+  } ],
+  "http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#hasAmountProbabilityDistribution" : [ {
+    "@value" : "Uniform(409.65, 609.65)"
+  } ],
+  "http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#hasCountry" : [ {
+    "@value" : "Spain"
+  } ],
+  "http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#hasCurrency" : [ {
+    "@value" : "Euro"
+  } ],
+  "http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#hasDescription" : [ {
+    "@value" : "Cost of diagnosis for profound BD in Spain. Includes retest for screening, two diagnostic tests and two blood extraction."
+  } ],
+  "http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#hasStudyIdentifier" : [ {
+    "@value" : "PBD_001"
+  } ],
+  "http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#hasTemporalBehavior" : [ {
+    "@value" : "ONETIME"
+  } ],
+  "http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#hasYear" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#short",
+    "@value" : "2013"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#Cost"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#PBD_ClinicalDiagnosisStepStrategy",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#hasDetection" : [ {
+    "@id" : "http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#PBD_ClinicalDiagnosis"
+  } ],
+  "http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#hasStepOrder" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#int",
+    "@value" : "1"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#ClinicalDiagnosisDetectionStepStrategy"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#PBD_ClinicalDiagnosisStrategy",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#hasClinicalDiagnosisStepsStrategy" : [ {
+    "@id" : "http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#PBD_ClinicalDiagnosisStepStrategy"
+  } ],
+  "http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#hasDescription" : [ {
+    "@value" : "Quantitative enzymatic determination of biotinidase activity in serum and plasma,and analysis of mutations of the biotinidase gene."
+  } ],
+  "http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#hasDetectionStrategyCost" : [ {
+    "@id" : "http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#PBD_ClinicalDiagnosisCost"
+  } ],
+  "http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#hasSensitivity" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#double",
+    "@value" : "1.0"
+  } ],
+  "http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#hasSpecificity" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#double",
+    "@value" : "1.0"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#ClinicalDiagnosisDetectionStrategy"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#PBD_FakeTreatmentCost",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#hasAmount" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#double",
+    "@value" : "20.2475"
+  } ],
+  "http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#hasCountry" : [ {
+    "@value" : "Germany"
+  } ],
+  "http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#hasCurrency" : [ {
+    "@value" : "Euro"
+  } ],
+  "http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#hasStudyIdentifier" : [ {
+    "@value" : "PBD_002"
+  } ],
+  "http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#hasTemporalBehavior" : [ {
+    "@value" : "ANNUAL"
+  } ],
+  "http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#hasYear" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#int",
+    "@value" : "2018"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#Cost"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#PBD_FakeTreatmentStrategy",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#hasDescription" : [ {
+    "@value" : "Lifetime PBD fake treatment"
+  } ],
+  "http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#hasTreatmentStrategyCost" : [ {
+    "@id" : "http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#PBD_FakeTreatmentCost"
+  } ],
+  "http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#hasTreatmentStrategyGuidelines" : [ {
+    "@id" : "http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#GuidelineLifetimeAnual"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#TreatmentStrategy"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#PBD_FollowUpCost",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#hasAmount" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#double",
+    "@value" : "616.75672"
+  } ],
+  "http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#hasCountry" : [ {
+    "@value" : "Spain"
+  } ],
+  "http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#hasCurrency" : [ {
+    "@value" : "Euro"
+  } ],
+  "http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#hasDescription" : [ {
+    "@value" : "Cost for annual ophthalmologic, auditory, and medical geneticist or metabolic specialist evaluations, and urinary organic acid and acylcarnitine analyses"
+  } ],
+  "http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#hasStudyIdentifier" : [ {
+    "@value" : "PBD_001"
+  } ],
+  "http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#hasTemporalBehavior" : [ {
+    "@value" : "ANNUAL"
+  } ],
+  "http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#hasYear" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#short",
+    "@value" : "2013"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#Cost"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#PBD_FollowUpStrategy",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#hasDescription" : [ {
+    "@value" : "Ophthalmologic, auditory, and medical geneticist or metabolic specialist evaluations and urinary organic acid and acylcarnitine analyses."
+  } ],
+  "http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#hasFollowUpStrategyCost" : [ {
+    "@id" : "http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#PBD_FollowUpCost"
+  } ],
+  "http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#hasFollowUpStrategyGuidelines" : [ {
+    "@id" : "http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#GuidelineLifetimeAnual"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#FollowUpStrategy"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#PBD_HearingProblemsManifestation",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#hasEndAge" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#double",
+    "@value" : "2.0"
+  } ],
+  "http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#hasManifestationCost" : [ {
+    "@id" : "http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#PBD_HearingProblemsManifestationCost"
+  } ],
+  "http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#hasManifestationFollowUpStrategy" : [ {
+    "@id" : "http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#DefaultFollowUpStrategy"
+  }, {
+    "@id" : "http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#PBD_FollowUpStrategy"
+  } ],
+  "http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#hasManifestationKind" : [ {
+    "@value" : "CHRONIC"
+  } ],
+  "http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#hasManifestationTreatmentStrategy" : [ {
+    "@id" : "http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#DefaultTreatmentStrategy"
+  }, {
+    "@id" : "http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#PBD_BiotinTreatmentStrategy"
+  } ],
+  "http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#hasOnSetAge" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#double",
+    "@value" : "1.0"
+  } ],
+  "http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#hasProbability" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#double",
+    "@value" : "0.515"
+  } ],
+  "http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#hasProbabilityDistribution" : [ {
+    "@value" : "Beta(24,34)"
+  } ],
+  "http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#hasProbabilityOfDiagnosis" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#double",
+    "@value" : "1.0"
+  } ],
+  "http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#hasUtility" : [ {
+    "@id" : "http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#PBD_HearingProblemsManifestationUtility"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#Manifestation"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#PBD_HearingProblemsManifestationCost",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#hasAmount" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#double",
+    "@value" : "155.14"
+  } ],
+  "http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#hasCountry" : [ {
+    "@value" : "Spain"
+  } ],
+  "http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#hasCurrency" : [ {
+    "@value" : "Euro"
+  } ],
+  "http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#hasDescription" : [ {
+    "@value" : "Annual costs for hearing problems."
+  } ],
+  "http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#hasInitialAmount" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#double",
+    "@value" : "43778.75"
+  } ],
+  "http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#hasStudyIdentifier" : [ {
+    "@value" : "PBD_001"
+  } ],
+  "http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#hasTemporalBehavior" : [ {
+    "@value" : "ANNUAL"
+  } ],
+  "http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#hasYear" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#short",
+    "@value" : "2013"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#Cost"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#PBD_HearingProblemsManifestationUtility",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#hasCountry" : [ {
+    "@value" : "Spain"
+  } ],
+  "http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#hasStudyIdentifier" : [ {
+    "@value" : "PBD_001"
+  } ],
+  "http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#hasTemporalBehavior" : [ {
+    "@value" : "ANNUAL"
+  } ],
+  "http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#hasUtilityKind" : [ {
+    "@value" : "UTILITY"
+  } ],
+  "http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#hasValue" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#double",
+    "@value" : "0.8761"
+  } ],
+  "http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#hasValueProbabilityDistribution" : [ {
+    "@value" : "Beta(5.6,0.79)"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#Utility"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#PBD_HypotoniaManifestation",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#hasEndAge" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#double",
+    "@value" : "1.0"
+  } ],
+  "http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#hasManifestationCost" : [ {
+    "@id" : "http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#PBD_HypotoniaManifestationCost"
+  } ],
+  "http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#hasManifestationFollowUpStrategy" : [ {
+    "@id" : "http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#DefaultFollowUpStrategy"
+  }, {
+    "@id" : "http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#PBD_FollowUpStrategy"
+  } ],
+  "http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#hasManifestationTreatmentStrategy" : [ {
+    "@id" : "http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#DefaultTreatmentStrategy"
+  }, {
+    "@id" : "http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#PBD_BiotinTreatmentStrategy"
+  } ],
+  "http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#hasOnSetAge" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#double",
+    "@value" : "0.0"
+  } ],
+  "http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#hasProbability" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#double",
+    "@value" : "0.457"
+  } ],
+  "http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#hasProbabilityDistribution" : [ {
+    "@value" : "Beta(17,20)"
+  } ],
+  "http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#hasUtility" : [ {
+    "@id" : "http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#PBD_HypotoniaManifestationUtility"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#Manifestation"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#PBD_HypotoniaManifestationCost",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#hasAmount" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#double",
+    "@value" : "0.0"
+  } ],
+  "http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#hasCountry" : [ {
+    "@value" : "Spain"
+  } ],
+  "http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#hasCurrency" : [ {
+    "@value" : "Euro"
+  } ],
+  "http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#hasDescription" : [ {
+    "@value" : "Annual costs for hypotonia."
+  } ],
+  "http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#hasInitialAmount" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#double",
+    "@value" : "3665.56"
+  } ],
+  "http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#hasStudyIdentifier" : [ {
+    "@value" : "PBD_001"
+  } ],
+  "http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#hasTemporalBehavior" : [ {
+    "@value" : "ONETIME"
+  } ],
+  "http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#hasYear" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#short",
+    "@value" : "2013"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#Cost"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#PBD_HypotoniaManifestationUtility",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#hasCountry" : [ {
+    "@value" : "Spain"
+  } ],
+  "http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#hasStudyIdentifier" : [ {
+    "@value" : "PBD_001"
+  } ],
+  "http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#hasUtilityKind" : [ {
+    "@value" : "UTILITY"
+  } ],
+  "http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#hasValue" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#double",
+    "@value" : "0.8861"
+  } ],
+  "http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#hasValueProbabilityDistribution" : [ {
+    "@value" : "Beta(5.2,0.67)"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#Utility"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#PBD_InterventionNoScreening",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#hasInterventionDetectionStrategy" : [ {
+    "@id" : "http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#PBD_ClinicalDiagnosisStrategy"
+  } ],
+  "http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#hasInterventionFollowUpStrategy" : [ {
+    "@id" : "http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#DefaultFollowUpStrategy"
+  }, {
+    "@id" : "http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#PBD_FollowUpStrategy"
+  } ],
+  "http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#hasInterventionKind" : [ {
+    "@value" : "DIAGNOSIS"
+  } ],
+  "http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#hasInterventionPopulation" : [ {
+    "@id" : "http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#PBD_BasePopulation"
+  } ],
+  "http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#hasInterventionTreatmentStrategy" : [ {
+    "@id" : "http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#DefaultTreatmentStrategy"
+  }, {
+    "@id" : "http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#PBD_BiotinTreatmentStrategy"
+  }, {
+    "@id" : "http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#PBD_FakeTreatmentStrategy"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#Intervention"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#PBD_InterventionScreening",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#hasInterventionDetectionStrategy" : [ {
+    "@id" : "http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#PBD_ScreeningDetectionStrategy"
+  } ],
+  "http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#hasInterventionFollowUpStrategy" : [ {
+    "@id" : "http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#DefaultFollowUpStrategy"
+  }, {
+    "@id" : "http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#PBD_FollowUpStrategy"
+  } ],
+  "http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#hasInterventionKind" : [ {
+    "@value" : "SCREENING"
+  } ],
+  "http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#hasInterventionPopulation" : [ {
+    "@id" : "http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#PBD_BasePopulation"
+  } ],
+  "http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#hasInterventionTreatmentStrategy" : [ {
+    "@id" : "http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#DefaultTreatmentStrategy"
+  }, {
+    "@id" : "http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#PBD_BiotinTreatmentStrategy"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#Intervention"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#PBD_MentalDelayManifestation",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#hasManifestationCost" : [ {
+    "@id" : "http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#PBD_MentalDelayManifestationCost"
+  } ],
+  "http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#hasManifestationFollowUpStrategy" : [ {
+    "@id" : "http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#DefaultFollowUpStrategy"
+  }, {
+    "@id" : "http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#PBD_FollowUpStrategy"
+  } ],
+  "http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#hasManifestationTreatmentStrategy" : [ {
+    "@id" : "http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#DefaultTreatmentStrategy"
+  }, {
+    "@id" : "http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#PBD_BiotinTreatmentStrategy"
+  }, {
+    "@id" : "http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#PBD_FakeTreatmentStrategy"
+  } ],
+  "http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#hasMortalityFactor" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#double",
+    "@value" : "-9.6"
+  } ],
+  "http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#hasMortalityFactorProbabilityDistribution" : [ {
+    "@value" : "Gamma(25,0.38)"
+  } ],
+  "http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#hasOnSetAge" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#double",
+    "@value" : "1.0"
+  } ],
+  "http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#hasProbability" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#double",
+    "@value" : "0.557"
+  } ],
+  "http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#hasUtility" : [ {
+    "@id" : "http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#PBD_MentalDelayManifestationUtility"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#Manifestation"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#PBD_MentalDelayManifestationCost",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#hasAmount" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#double",
+    "@value" : "217.74"
+  } ],
+  "http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#hasCountry" : [ {
+    "@value" : "Spain"
+  } ],
+  "http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#hasCurrency" : [ {
+    "@value" : "Euro"
+  } ],
+  "http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#hasDescription" : [ {
+    "@value" : "Annual costs for mental delay."
+  } ],
+  "http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#hasInitialAmount" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#double",
+    "@value" : "16824.19"
+  } ],
+  "http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#hasStudyIdentifier" : [ {
+    "@value" : "PBD_001"
+  } ],
+  "http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#hasTemporalBehavior" : [ {
+    "@value" : "ANNUAL"
+  } ],
+  "http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#hasYear" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#short",
+    "@value" : "2013"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#Cost"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#PBD_MentalDelayManifestationUtility",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#hasCountry" : [ {
+    "@value" : "Spain"
+  } ],
+  "http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#hasStudyIdentifier" : [ {
+    "@value" : "PBD_001"
+  } ],
+  "http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#hasUtilityKind" : [ {
+    "@value" : "UTILITY"
+  } ],
+  "http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#hasValue" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#double",
+    "@value" : "0.8161"
+  } ],
+  "http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#hasValueProbabilityDistribution" : [ {
+    "@value" : "Beta(1.71,0.39)"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#Utility"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#PBD_NaturalDevelopment",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#hasDevelopmentKind" : [ {
+    "@value" : "NATURAL"
+  } ],
+  "http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#hasDevelopmentManifestations" : [ {
+    "@id" : "http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#PBD_HearingProblemsManifestation"
+  }, {
+    "@id" : "http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#PBD_HypotoniaManifestation"
+  }, {
+    "@id" : "http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#PBD_MentalDelayManifestation"
+  }, {
+    "@id" : "http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#PBD_SeizureManifestation"
+  }, {
+    "@id" : "http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#PBD_SkinProblemsManifestation"
+  }, {
+    "@id" : "http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#PBD_VisionLossManifestation"
+  } ],
+  "http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#hasLifeExpectancyProbabilityDistribution" : [ {
+    "@value" : "Gamma(25, 3.29)"
+  } ],
+  "http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#hasStage" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#short",
+    "@value" : "0"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#Development"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#PBD_ProfoundBiotinidaseDeficiency",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#hasDetectionStrategy" : [ {
+    "@id" : "http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#PBD_ClinicalDiagnosisStrategy"
+  }, {
+    "@id" : "http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#PBD_ScreeningDetectionStrategy"
+  } ],
+  "http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#hasDiseaseDevelopments" : [ {
+    "@id" : "http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#PBD_NaturalDevelopment"
+  } ],
+  "http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#hasDiseaseFollowUpStrategy" : [ {
+    "@id" : "http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#DefaultFollowUpStrategy"
+  }, {
+    "@id" : "http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#PBD_FollowUpStrategy"
+  } ],
+  "http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#hasDiseaseTreatmentStrategy" : [ {
+    "@id" : "http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#DefaultTreatmentStrategy"
+  }, {
+    "@id" : "http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#PBD_BiotinTreatmentStrategy"
+  }, {
+    "@id" : "http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#PBD_FakeTreatmentStrategy"
+  } ],
+  "http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#hasInterventions" : [ {
+    "@id" : "http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#PBD_InterventionNoScreening"
+  }, {
+    "@id" : "http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#PBD_InterventionScreening"
+  } ],
+  "http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#hasPrevalenceAtBirth" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#double",
+    "@value" : "1.4788E-5"
+  } ],
+  "http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#hasProbabilityDistribution" : [ {
+    "@value" : "Beta(8, 540955)"
+  } ],
+  "http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#hasRarity" : [ {
+    "@value" : "RARE"
+  } ],
+  "http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#hasReferences" : [ {
+    "@id" : "http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#PBD_References"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#Disease"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@value" : "https://bioportal.bioontology.org/ontologies/SNOMEDCT/?p=classes&conceptid=http%3A%2F%2Fpurl.bioontology.org%2Fontology%2FSNOMEDCT%2F8808004&jump_to_nav=true"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "ProfoundBiotinidaseDeficiency"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#PBD_References",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#hasReference" : [ {
+    "@value" : "DO - DOID:856"
+  }, {
+    "@value" : "GARD - https://rarediseases.info.nih.gov/diseases/894/index"
+  }, {
+    "@value" : "ICD - E53.8"
+  }, {
+    "@value" : "OMIM - https://omim.org/entry/253260"
+  }, {
+    "@value" : "ORDO - https://www.orpha.net/consor/cgi-bin/OC_Exp.php?lng=EN&Expert=79241"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#Reference"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#PBD_Screening",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#hasDescription" : [ {
+    "@value" : "Measurement of biotinidase activity in blood-saturated filter paper samples on enzymatic assay or semiquantitative fluorometric determination"
+  } ],
+  "http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#hasDetectionCost" : [ {
+    "@id" : "http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#PBD_ScreeningCost"
+  } ],
+  "http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#hasIdentifier" : [ {
+    "@value" : "BioActivity"
+  } ],
+  "http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#hasSensitivity" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#double",
+    "@value" : "1.0"
+  } ],
+  "http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#hasSpecificity" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#double",
+    "@value" : "0.999935"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#Screening"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#PBD_ScreeningCost",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#hasAmount" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#double",
+    "@value" : "0.89"
+  } ],
+  "http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#hasAmountProbabilityDistribution" : [ {
+    "@value" : "Uniform(0.5, 2.5)"
+  } ],
+  "http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#hasCountry" : [ {
+    "@value" : "Spain"
+  } ],
+  "http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#hasCurrency" : [ {
+    "@value" : "Euro"
+  } ],
+  "http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#hasDescription" : [ {
+    "@value" : "Cost of screening test for profound biotinidase deficiency in Spain"
+  } ],
+  "http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#hasStudyIdentifier" : [ {
+    "@value" : "PBD_001"
+  } ],
+  "http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#hasTemporalBehavior" : [ {
+    "@value" : "ONETIME"
+  } ],
+  "http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#hasYear" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#short",
+    "@value" : "2013"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#Cost"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#PBD_ScreeningDetectionStepStrategy",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#hasDetection" : [ {
+    "@id" : "http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#PBD_Screening"
+  } ],
+  "http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#hasStepOrder" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#int",
+    "@value" : "1"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#ScreeningDetectionStepStrategy"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#PBD_ScreeningDetectionStrategy",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#hasDescription" : [ {
+    "@value" : "Measurement of biotinidase activity in blood-saturated filter paper samples on enzymatic assay or semiquantitative fluorometric determination. After a positive, the analysis is repeated twice."
+  } ],
+  "http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#hasDetectionStrategyCost" : [ {
+    "@id" : "http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#PBD_ScreeningCost"
+  } ],
+  "http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#hasScreeningStepsStrategy" : [ {
+    "@id" : "http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#PBD_ScreeningDetectionStepStrategy"
+  } ],
+  "http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#hasSensitivity" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#double",
+    "@value" : "0.999935"
+  } ],
+  "http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#hasSpecificity" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#double",
+    "@value" : "0.999935"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#ScreeningDetectionStrategy"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#PBD_SeizureManifestation",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#hasEndAge" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#double",
+    "@value" : "1.0"
+  } ],
+  "http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#hasManifestationCost" : [ {
+    "@id" : "http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#PBD_SeizureManifestationCost"
+  } ],
+  "http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#hasManifestationFollowUpStrategy" : [ {
+    "@id" : "http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#DefaultFollowUpStrategy"
+  }, {
+    "@id" : "http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#PBD_FollowUpStrategy"
+  } ],
+  "http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#hasManifestationTreatmentStrategy" : [ {
+    "@id" : "http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#DefaultTreatmentStrategy"
+  }, {
+    "@id" : "http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#PBD_BiotinTreatmentStrategy"
+  }, {
+    "@id" : "http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#PBD_FakeTreatmentStrategy"
+  } ],
+  "http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#hasOnSetAge" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#double",
+    "@value" : "0.0"
+  } ],
+  "http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#hasProbability" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#double",
+    "@value" : "0.564"
+  } ],
+  "http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#hasProbabilityDistribution" : [ {
+    "@value" : "Beta(65, 50)"
+  } ],
+  "http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#hasUtility" : [ {
+    "@id" : "http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#PBD_SeizureManifestationUtility"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#Manifestation"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#PBD_SeizureManifestationCost",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#hasAmount" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#double",
+    "@value" : "0.0"
+  } ],
+  "http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#hasCountry" : [ {
+    "@value" : "Spain"
+  } ],
+  "http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#hasCurrency" : [ {
+    "@value" : "Euro"
+  } ],
+  "http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#hasDescription" : [ {
+    "@value" : "Annual costs for seizures."
+  } ],
+  "http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#hasInitialAmount" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#double",
+    "@value" : "3665.56"
+  } ],
+  "http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#hasStudyIdentifier" : [ {
+    "@value" : "PBD_001"
+  } ],
+  "http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#hasTemporalBehavior" : [ {
+    "@value" : "ONETIME"
+  } ],
+  "http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#hasYear" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#short",
+    "@value" : "2013"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#Cost"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#PBD_SeizureManifestationUtility",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#hasCountry" : [ {
+    "@value" : "Spain"
+  } ],
+  "http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#hasStudyIdentifier" : [ {
+    "@value" : "PBD_001"
+  } ],
+  "http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#hasUtilityKind" : [ {
+    "@value" : "UTILITY"
+  } ],
+  "http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#hasValue" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#double",
+    "@value" : "0.8461"
+  } ],
+  "http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#hasValueProbabilityDistribution" : [ {
+    "@value" : "Beta(1.65,0.3)"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#Utility"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#PBD_SkinProblemsManifestation",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#hasEndAge" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#double",
+    "@value" : "1.0"
+  } ],
+  "http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#hasManifestationCost" : [ {
+    "@id" : "http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#PBD_SkinProblemsManifestationCost"
+  } ],
+  "http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#hasManifestationFollowUpStrategy" : [ {
+    "@id" : "http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#DefaultFollowUpStrategy"
+  }, {
+    "@id" : "http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#PBD_FollowUpStrategy"
+  } ],
+  "http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#hasManifestationTreatmentStrategy" : [ {
+    "@id" : "http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#DefaultTreatmentStrategy"
+  }, {
+    "@id" : "http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#PBD_BiotinTreatmentStrategy"
+  }, {
+    "@id" : "http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#PBD_FakeTreatmentStrategy"
+  } ],
+  "http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#hasOnSetAge" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#double",
+    "@value" : "0.0"
+  } ],
+  "http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#hasProbability" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#double",
+    "@value" : "0.41"
+  } ],
+  "http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#hasProbabilityDistribution" : [ {
+    "@value" : "Beta(24,34)"
+  } ],
+  "http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#hasUtility" : [ {
+    "@id" : "http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#PBD_SkinProblemsManifestationUtility"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#Manifestation"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#PBD_SkinProblemsManifestationCost",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#hasAmount" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#double",
+    "@value" : "0.0"
+  } ],
+  "http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#hasCountry" : [ {
+    "@value" : "Spain"
+  } ],
+  "http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#hasCurrency" : [ {
+    "@value" : "Euro"
+  } ],
+  "http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#hasDescription" : [ {
+    "@value" : "Annual costs for skin problems."
+  } ],
+  "http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#hasInitialAmount" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#double",
+    "@value" : "3665.56"
+  } ],
+  "http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#hasStudyIdentifier" : [ {
+    "@value" : "PBD_001"
+  } ],
+  "http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#hasTemporalBehavior" : [ {
+    "@value" : "ONETIME"
+  } ],
+  "http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#hasYear" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#short",
+    "@value" : "2013"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#Cost"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#PBD_SkinProblemsManifestationUtility",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#hasCountry" : [ {
+    "@value" : "Spain"
+  } ],
+  "http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#hasStudyIdentifier" : [ {
+    "@value" : "PBD_001"
+  } ],
+  "http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#hasUtilityKind" : [ {
+    "@value" : "UTILITY"
+  } ],
+  "http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#hasValue" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#double",
+    "@value" : "0.8861"
+  } ],
+  "http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#hasValueProbabilityDistribution" : [ {
+    "@value" : "Beta(5.2,0.67)"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#Utility"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#PBD_VisionLossManifestation",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#hasManifestationCost" : [ {
+    "@id" : "http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#PBD_VisionLossManifestationCost"
+  } ],
+  "http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#hasManifestationFollowUpStrategy" : [ {
+    "@id" : "http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#DefaultFollowUpStrategy"
+  }, {
+    "@id" : "http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#PBD_FollowUpStrategy"
+  } ],
+  "http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#hasManifestationTreatmentStrategy" : [ {
+    "@id" : "http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#DefaultTreatmentStrategy"
+  }, {
+    "@id" : "http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#PBD_BiotinTreatmentStrategy"
+  } ],
+  "http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#hasOnSetAge" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#double",
+    "@value" : "1.0"
+  } ],
+  "http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#hasProbability" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#double",
+    "@value" : "0.175"
+  } ],
+  "http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#hasProbabilityDistribution" : [ {
+    "@value" : "Beta(19,91)"
+  } ],
+  "http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#hasUtility" : [ {
+    "@id" : "http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#PBD_VisionLossManifestationUtility"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#Manifestation"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#PBD_VisionLossManifestationCost",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#hasAmount" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#double",
+    "@value" : "121.86"
+  } ],
+  "http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#hasCountry" : [ {
+    "@value" : "Spain"
+  } ],
+  "http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#hasCurrency" : [ {
+    "@value" : "Euro"
+  } ],
+  "http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#hasDescription" : [ {
+    "@value" : "Annual costs for vision loss."
+  } ],
+  "http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#hasInitialAmount" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#double",
+    "@value" : "10155.44"
+  } ],
+  "http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#hasStudyIdentifier" : [ {
+    "@value" : "PBD_001"
+  } ],
+  "http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#hasTemporalBehavior" : [ {
+    "@value" : "ANNUAL"
+  } ],
+  "http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#hasYear" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#short",
+    "@value" : "2013"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#Cost"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#PBD_VisionLossManifestationUtility",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#hasCountry" : [ {
+    "@value" : "Spain"
+  } ],
+  "http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#hasStudyIdentifier" : [ {
+    "@value" : "PBD_001"
+  } ],
+  "http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#hasUtilityKind" : [ {
+    "@value" : "UTILITY"
+  } ],
+  "http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#hasValue" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#double",
+    "@value" : "0.8861"
+  } ],
+  "http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#hasValueProbabilityDistribution" : [ {
+    "@value" : "Beta((5.2,0.67)"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#Utility"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#Population",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "_:genid113"
+  }, {
+    "@id" : "_:genid114"
+  }, {
+    "@id" : "_:genid115"
+  }, {
+    "@id" : "_:genid116"
+  }, {
+    "@id" : "_:genid117"
+  }, {
+    "@id" : "_:genid118"
+  }, {
+    "@id" : "_:genid119"
+  }, {
+    "@id" : "_:genid120"
+  }, {
+    "@id" : "_:genid121"
+  }, {
+    "@id" : "_:genid122"
+  }, {
+    "@id" : "_:genid123"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#Reference",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Main references assessed for the description of the disease"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Reference"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "_:genid124"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#Screening",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Checking for disease when there are no symptoms. Since screening may find diseases at an early stage, there may be a better chance of curing the disease. Screening can also include doing a genetic test to check for a person’s risk of developing an inherited disease."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@value" : "https://www.cancer.gov/publications/dictionaries/cancer-terms/def/screening"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Screening"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#Detection"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#ScreeningDetectionStepStrategy",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Describes the various steps involved in completing a screening procedure."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "ScreeningDetectionStepStrategy"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#StepStrategy"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#ScreeningDetectionStrategy",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Checking for disease when there are no symptoms. Since screening may find diseases at an early stage, there may be a better chance of curing the disease. Screening can also include doing a genetic test to check for a person’s risk of developing an inherited disease."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@value" : "https://www.cancer.gov/publications/dictionaries/cancer-terms/def/screening"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "ScreeningDetectionStrategy"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#DetectionStrategy"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#StepStrategy",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Describes the different steps to be followed to complete a given procedure."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "StepStrategy"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "_:genid125"
+  }, {
+    "@id" : "_:genid126"
+  }, {
+    "@id" : "_:genid127"
+  }, {
+    "@id" : "_:genid128"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#Treatment",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "It contains the information necessary to quantitatively analyze a given treatment procedure applied to a specific disease or intervention."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Treatment"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "_:genid129"
+  }, {
+    "@id" : "_:genid130"
+  }, {
+    "@id" : "_:genid131"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#TreatmentStepStrategy",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Describes the various steps involved in completing a treatment  procedure."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "TreatmentStepStrategy"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#StepStrategy"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#TreatmentStrategy",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Describes any non-drug intervention used to treat a disease or manifestation"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "TreatmentStrategy"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "_:genid132"
+  }, {
+    "@id" : "_:genid133"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#Utility",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Stores the health-related quality of life that can be used to characterize the impact of a manifestation of the disease."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Utility"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "_:genid134"
+  }, {
+    "@id" : "_:genid135"
+  }, {
+    "@id" : "_:genid136"
+  }, {
+    "@id" : "_:genid137"
+  }, {
+    "@id" : "_:genid138"
+  }, {
+    "@id" : "_:genid139"
+  }, {
+    "@id" : "_:genid140"
+  }, {
+    "@id" : "_:genid145"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#hasAmount",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty", "http://www.w3.org/2002/07/owl#FunctionalProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#double"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#hasAmountProbabilityDistribution",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty", "http://www.w3.org/2002/07/owl#FunctionalProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#string"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#hasAverageAge",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty", "http://www.w3.org/2002/07/owl#FunctionalProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#double"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#hasCalculationMethod",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty", "http://www.w3.org/2002/07/owl#FunctionalProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#string"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#hasClinicalDiagnosisStepsStrategy",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#ClinicalDiagnosisDetectionStrategy"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#ClinicalDiagnosisDetectionStepStrategy"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#hasCondition",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty", "http://www.w3.org/2002/07/owl#FunctionalProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "It allows expressing conditions based on parameters that we will find in the model. For example, we can find that certain drugs will be administered depending on the weight or age of the patient. The language in which the conditions are expressed is in EL format (Expression Language: JSR-341)."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#string"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#hasConditions",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty", "http://www.w3.org/2002/07/owl#FunctionalProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#double"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#hasCountry",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty", "http://www.w3.org/2002/07/owl#FunctionalProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#string"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#hasCountryContext",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty", "http://www.w3.org/2002/07/owl#FunctionalProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Contains the context in which a parameter is studied within a country. This can be at the level of city, state, autonomous community, or region."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#string"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#hasCurrency",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty", "http://www.w3.org/2002/07/owl#FunctionalProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#string"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#hasDescription",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty", "http://www.w3.org/2002/07/owl#FunctionalProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Description"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#string"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#hasDetection",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty", "http://www.w3.org/2002/07/owl#FunctionalProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#StepStrategy"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#Detection"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#hasDetectionCost",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty", "http://www.w3.org/2002/07/owl#FunctionalProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#Detection"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#Cost"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#hasDetectionStrategy",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#Disease"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#DetectionStrategy"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#hasDetectionStrategyCost",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty", "http://www.w3.org/2002/07/owl#FunctionalProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#DetectionStrategy"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#Cost"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#hasDevelopment",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#DevelopmentModification"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#Development"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#hasDevelopmentKind",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty", "http://www.w3.org/2002/07/owl#FunctionalProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "_:genid1"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#hasDevelopmentManifestations",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#Development"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#Manifestation"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#hasDevelopmentModifications",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#Intervention"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#DevelopmentModification"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#hasDiseaseDevelopments",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#Disease"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#Development"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#hasDiseaseFollowUpStrategy",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#Disease"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#FollowUpStrategy"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#hasDiseaseTreatmentStrategy",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Describes any non-drug intervention used to treat a disease or manifestation"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#Disease"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#TreatmentStrategy"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#hasDose",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty", "http://www.w3.org/2002/07/owl#FunctionalProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Dosage of the indicated drug"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#double"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#hasDrugCost",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#Drug"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#Cost"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#hasDrugGuidelines",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#Drug"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#Guidelines"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#hasDrugs",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#Treatment"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#Drug"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#hasDuration",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty", "http://www.w3.org/2002/07/owl#FunctionalProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#double"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#hasEndAge",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty", "http://www.w3.org/2002/07/owl#FunctionalProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#double"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#hasEtiology",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty", "http://www.w3.org/2002/07/owl#FunctionalProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Etiology"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#string"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#hasFemaleProportion",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty", "http://www.w3.org/2002/07/owl#FunctionalProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#double"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#hasFollowUp",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty", "http://www.w3.org/2002/07/owl#FunctionalProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#FollowUpStepStrategy"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#FollowUp"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#hasFollowUpCost",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#FollowUp"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#Cost"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#hasFollowUpGuidelines",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#FollowUp"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#Guidelines"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#hasFollowUpStepsStrategy",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#FollowUpStrategy"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#FollowUpStepStrategy"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#hasFollowUpStrategyCost",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty", "http://www.w3.org/2002/07/owl#FunctionalProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#FollowUpStrategy"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#Cost"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#hasFollowUpStrategyGuidelines",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#FollowUpStrategy"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#Guidelines"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#hasFrequency",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty", "http://www.w3.org/2002/07/owl#FunctionalProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Indicates the time cycle of how often the treatment, the follow-up test or their respective strategies have to be applied. In the case of a manifestation of the disease, it will indicate how many times a year the symptom manifests itself. \n\nBy default = 1, for the Manifestations."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#double"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#hasFrequencyModification",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty", "http://www.w3.org/2002/07/owl#FunctionalProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#double"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#hasGuidelineUtility",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#Guidelines"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#Utility"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#hasHoursInterval",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty", "http://www.w3.org/2002/07/owl#FunctionalProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Interval in which the indicated dose of drug should be given."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#double"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#hasIdentifier",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty", "http://www.w3.org/2002/07/owl#FunctionalProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Stores the identifier of an instance. The objective of this field is to facilitate the identification and relationship between instances with a view to software programming."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#string"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#hasInitialAmount",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty", "http://www.w3.org/2002/07/owl#FunctionalProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#double"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#hasInterventionDetectionStrategy",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#Intervention"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#DetectionStrategy"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#hasInterventionFollowUpStrategy",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#Intervention"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#FollowUpStrategy"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#hasInterventionKind",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty", "http://www.w3.org/2002/07/owl#FunctionalProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "_:genid4"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#hasInterventionPopulation",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#Intervention"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#Population"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#hasInterventionTreatmentStrategy",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#Intervention"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#TreatmentStrategy"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#hasInterventions",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "A disease to be studied will have technologies or procedures used to modify the natural history of the disease."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#Disease"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#Intervention"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#hasLifeExpectancy",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty", "http://www.w3.org/2002/07/owl#FunctionalProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#double"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#hasLifeExpectancyModification",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty", "http://www.w3.org/2002/07/owl#FunctionalProperty" ]
+}, {
+  "@id" : "http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#hasLifeExpectancyProbabilityDistribution",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty", "http://www.w3.org/2002/07/owl#FunctionalProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#string"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#hasMaleProportion",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty", "http://www.w3.org/2002/07/owl#FunctionalProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#double"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#hasManifestationCost",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#Manifestation"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#Cost"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#hasManifestationFollowUpStrategy",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#Manifestation"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#FollowUpStrategy"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#hasManifestationKind",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty", "http://www.w3.org/2002/07/owl#FunctionalProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "_:genid8"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#hasManifestationModification",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#Intervention"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#ManifestationModification"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#hasManifestationTreatmentStrategy",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#Manifestation"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#TreatmentStrategy"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#hasManifestations",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#ManifestationModification"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#Manifestation"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#hasModificationKind",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty", "http://www.w3.org/2002/07/owl#FunctionalProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "_:genid11"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#hasMortalityFactor",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty", "http://www.w3.org/2002/07/owl#FunctionalProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#double"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#hasMortalityFactorModification",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty", "http://www.w3.org/2002/07/owl#FunctionalProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#double"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#hasMortalityFactorProbabilityDistribution",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty", "http://www.w3.org/2002/07/owl#FunctionalProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#string"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#hasOnSetAge",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty", "http://www.w3.org/2002/07/owl#FunctionalProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#double"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#hasPercentForNext",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty", "http://www.w3.org/2002/07/owl#FunctionalProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#double"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#hasPercentageTreated",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty", "http://www.w3.org/2002/07/owl#FunctionalProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#string"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#hasPopulationKind",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty", "http://www.w3.org/2002/07/owl#FunctionalProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "_:genid15"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#hasPopulationUtility",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty", "http://www.w3.org/2002/07/owl#FunctionalProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#Population"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#Utility"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#hasPresentation",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty", "http://www.w3.org/2002/07/owl#FunctionalProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "_:genid21"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#hasPrevalenceAtBirth",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty", "http://www.w3.org/2002/07/owl#FunctionalProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "The prevalence of a disease is the total number of individuals presenting an attribute or disease at a time or during a period divided by the population at that point in time or in the middle of the period. Quantifies the proportion of people in a population who have a disease (or any other event) at a given time and provides an estimate of the proportion of subjects in that population who have the disease at that time."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#double"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#hasProbability",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty", "http://www.w3.org/2002/07/owl#FunctionalProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#double"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#hasProbabilityDistribution",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty", "http://www.w3.org/2002/07/owl#FunctionalProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#string"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#hasProbabilityModification",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty", "http://www.w3.org/2002/07/owl#FunctionalProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#double"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#hasProbabilityOfDiagnosis",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty", "http://www.w3.org/2002/07/owl#FunctionalProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Probability that the manifestation presented, the clinical diagnosis is made."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#double"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#hasProbabilityOfDiagnosisModification",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty", "http://www.w3.org/2002/07/owl#FunctionalProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#double"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#hasRange",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty", "http://www.w3.org/2002/07/owl#FunctionalProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Age range in which the drug will be delivered.\n\nExamples: \n   0y-2y    => 0 years to 2 years\n   3m-2y   => 3 months to 2 years"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#string"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#hasRarity",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty", "http://www.w3.org/2002/07/owl#FunctionalProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "_:genid24"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#hasReference",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#Reference"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#string"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#hasReferences",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty", "http://www.w3.org/2002/07/owl#FunctionalProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "A disease recorded in the ontology will have references to external contrasted medical ontologies."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#Disease"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#Reference"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#hasRelativeRisk",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty", "http://www.w3.org/2002/07/owl#FunctionalProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#double"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#hasRelativeRiskModification",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty", "http://www.w3.org/2002/07/owl#FunctionalProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#double"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#hasScreeningStepsStrategy",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#ScreeningDetectionStrategy"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#ScreeningDetectionStepStrategy"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#hasSensitivity",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty", "http://www.w3.org/2002/07/owl#FunctionalProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "The Sensitivity in epidemiology is the Probability of correctly classifying a sick individual, that is, the Probability that a positive result will be obtained in a diagnostic test for a sick subject. The Sensitivity is, therefore, the ability of the complementary test to detect the disease. Sensitivity is the percentage of true positives or the Probability that the test is positive if the disease is present; False negatives are sick subjects diagnosed as healthy."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#double"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#hasSize",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty", "http://www.w3.org/2002/07/owl#FunctionalProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#int"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#hasSource",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty", "http://www.w3.org/2002/07/owl#FunctionalProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#string"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#hasSpecificity",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty", "http://www.w3.org/2002/07/owl#FunctionalProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "The Specificity of a test is the Probability that a healthy subject will have a negative test result. Specificity is the percentage of true negatives or the Probability that the test will be negative if the disease is not present. False positives are healthy subjects diagnosed as sick."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#double"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#hasSpecificityProbabilityDistribution",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty", "http://www.w3.org/2002/07/owl#FunctionalProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#string"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#hasStage",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty", "http://www.w3.org/2002/07/owl#FunctionalProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#short"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#hasStepOrder",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty", "http://www.w3.org/2002/07/owl#FunctionalProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#int"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#hasStudyIdentifier",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty", "http://www.w3.org/2002/07/owl#FunctionalProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#string"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#hasTemporalBehavior",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty", "http://www.w3.org/2002/07/owl#FunctionalProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "ONETIME: the cost/utility applies only once at the time of the event.\nANNUAL: the cost/utility indicates that the indicated value affects annually throughout the patient's life."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "_:genid27"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#hasTreatment",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#TreatmentStepStrategy"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#Treatment"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#hasTreatmentCost",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#Treatment"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#Cost"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#hasTreatmentGuidelines",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#Treatment"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#Guidelines"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#hasTreatmentStepsStrategy",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#TreatmentStrategy"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#TreatmentStepStrategy"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#hasTreatmentStrategyCost",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#TreatmentStrategy"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#Cost"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#hasTreatmentStrategyGuidelines",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#TreatmentStrategy"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#Guidelines"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#hasUtility",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#Manifestation"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#Utility"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#hasUtilityKind",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty", "http://www.w3.org/2002/07/owl#FunctionalProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "_:genid31"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#hasValue",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty", "http://www.w3.org/2002/07/owl#FunctionalProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#double"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#hasValueProbabilityDistribution",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty", "http://www.w3.org/2002/07/owl#FunctionalProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#string"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#hasYear",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty", "http://www.w3.org/2002/07/owl#FunctionalProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Year in which the parameter data is collected"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#short"
+  } ]
+} ]

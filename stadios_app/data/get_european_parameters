@@ -1,0 +1,16 @@
+SELECT ?parameterType ?parameter ?studyIdentifier ?parameterCountry ?countryLabel WHERE {
+
+   ?parameter std:hasCountry ?parameterCountry;
+              std:hasStudyIdentifier ?studyIdentifier;
+              rdf:type ?parameterType .
+   ?parameterType a owl:Class.
+
+   SERVICE <https://query.wikidata.org/sparql> {
+      {
+         wd:Q458 wdt:P527  ?country .
+         ?country rdfs:label ?countryLabel .
+         FILTER (lang(?countryLabel)="en")
+      }
+   }
+   FILTER CONTAINS(?countryLabel,?parameterCountry)
+}

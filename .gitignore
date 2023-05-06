@@ -1,0 +1,16 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+
+# CPython
+*.so
+*.pyd
+
+# PyCharm
+.idea/
+*.iml
+*.ipr
+*.iws
+*.bak
+*.log
+*.dsk

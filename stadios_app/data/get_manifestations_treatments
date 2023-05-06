@@ -1,0 +1,5 @@
+SELECT ?disease ?development ?manifestation ?treatment
+WHERE {
+    ?disease std:hasDiseaseDevelopments ?development .
+    ?development std:hasDevelopmentManifestations ?manifestation .
+    ?manifestation std:hasManifestationTreatmentStrategy ?treatment.

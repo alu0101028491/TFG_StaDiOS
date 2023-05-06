@@ -1,0 +1,3000 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#"
+     xml:base="http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:StaDiOS="http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#">
+        <rdfs:comment>Ontology for the standard description of diseases and the generation of knowledge bases to facilitate cost-utility studies.</rdfs:comment>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#hasClinicalDiagnosisStepsStrategy -->
+
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#hasClinicalDiagnosisStepsStrategy">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#ClinicalDiagnosisDetectionStrategy"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#ClinicalDiagnosisDetectionStepStrategy"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#hasDetection -->
+
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#hasDetection">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#StepStrategy"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#Detection"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#hasDetectionCost -->
+
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#hasDetectionCost">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#Detection"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#Cost"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#hasDetectionStrategy -->
+
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#hasDetectionStrategy">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#Disease"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#DetectionStrategy"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#hasDetectionStrategyCost -->
+
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#hasDetectionStrategyCost">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#DetectionStrategy"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#Cost"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#hasDevelopment -->
+
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#hasDevelopment">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#DevelopmentModification"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#Development"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#hasDevelopmentManifestations -->
+
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#hasDevelopmentManifestations">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#Development"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#Manifestation"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#hasDevelopmentModifications -->
+
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#hasDevelopmentModifications">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#Intervention"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#DevelopmentModification"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#hasDiseaseDevelopments -->
+
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#hasDiseaseDevelopments">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#Disease"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#Development"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#hasDiseaseFollowUpStrategy -->
+
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#hasDiseaseFollowUpStrategy">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#Disease"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#FollowUpStrategy"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#hasDiseaseTreatmentStrategy -->
+
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#hasDiseaseTreatmentStrategy">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#Disease"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#TreatmentStrategy"/>
+        <rdfs:comment>Describes any non-drug intervention used to treat a disease or manifestation</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#hasDrugCost -->
+
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#hasDrugCost">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#Drug"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#Cost"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#hasDrugGuidelines -->
+
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#hasDrugGuidelines">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#Drug"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#Guidelines"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#hasDrugs -->
+
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#hasDrugs">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#Treatment"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#Drug"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#hasFollowUp -->
+
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#hasFollowUp">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#FollowUpStepStrategy"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#FollowUp"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#hasFollowUpCost -->
+
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#hasFollowUpCost">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#FollowUp"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#Cost"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#hasFollowUpGuidelines -->
+
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#hasFollowUpGuidelines">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#FollowUp"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#Guidelines"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#hasFollowUpStepsStrategy -->
+
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#hasFollowUpStepsStrategy">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#FollowUpStrategy"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#FollowUpStepStrategy"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#hasFollowUpStrategyCost -->
+
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#hasFollowUpStrategyCost">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#FollowUpStrategy"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#Cost"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#hasFollowUpStrategyGuidelines -->
+
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#hasFollowUpStrategyGuidelines">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#FollowUpStrategy"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#Guidelines"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#hasGuidelineUtility -->
+
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#hasGuidelineUtility">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#Guidelines"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#Utility"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#hasInterventionDetectionStrategy -->
+
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#hasInterventionDetectionStrategy">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#Intervention"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#DetectionStrategy"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#hasInterventionFollowUpStrategy -->
+
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#hasInterventionFollowUpStrategy">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#Intervention"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#FollowUpStrategy"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#hasInterventionPopulation -->
+
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#hasInterventionPopulation">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#Intervention"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#Population"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#hasInterventionTreatmentStrategy -->
+
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#hasInterventionTreatmentStrategy">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#Intervention"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#TreatmentStrategy"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#hasInterventions -->
+
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#hasInterventions">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#Disease"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#Intervention"/>
+        <rdfs:comment>A disease to be studied will have technologies or procedures used to modify the natural history of the disease.</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#hasManifestationCost -->
+
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#hasManifestationCost">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#Manifestation"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#Cost"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#hasManifestationFollowUpStrategy -->
+
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#hasManifestationFollowUpStrategy">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#Manifestation"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#FollowUpStrategy"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#hasManifestationModification -->
+
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#hasManifestationModification">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#Intervention"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#ManifestationModification"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#hasManifestationTreatmentStrategy -->
+
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#hasManifestationTreatmentStrategy">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#Manifestation"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#TreatmentStrategy"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#hasManifestations -->
+
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#hasManifestations">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#ManifestationModification"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#Manifestation"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#hasPopulationUtility -->
+
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#hasPopulationUtility">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#Population"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#Utility"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#hasReferences -->
+
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#hasReferences">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#Disease"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#Reference"/>
+        <rdfs:comment>A disease recorded in the ontology will have references to external contrasted medical ontologies.</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#hasScreeningStepsStrategy -->
+
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#hasScreeningStepsStrategy">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#ScreeningDetectionStrategy"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#ScreeningDetectionStepStrategy"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#hasTreatment -->
+
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#hasTreatment">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#TreatmentStepStrategy"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#Treatment"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#hasTreatmentCost -->
+
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#hasTreatmentCost">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#Treatment"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#Cost"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#hasTreatmentGuidelines -->
+
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#hasTreatmentGuidelines">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#Treatment"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#Guidelines"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#hasTreatmentStepsStrategy -->
+
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#hasTreatmentStepsStrategy">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#TreatmentStrategy"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#TreatmentStepStrategy"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#hasTreatmentStrategyCost -->
+
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#hasTreatmentStrategyCost">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#TreatmentStrategy"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#Cost"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#hasTreatmentStrategyGuidelines -->
+
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#hasTreatmentStrategyGuidelines">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#TreatmentStrategy"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#Guidelines"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#hasUtility -->
+
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#hasUtility">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#Manifestation"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#Utility"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#hasAmount -->
+
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#hasAmount">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#hasAmountProbabilityDistribution -->
+
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#hasAmountProbabilityDistribution">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#hasAverageAge -->
+
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#hasAverageAge">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#hasCalculationMethod -->
+
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#hasCalculationMethod">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#hasCondition -->
+
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#hasCondition">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:comment>It allows expressing conditions based on parameters that we will find in the model. For example, we can find that certain drugs will be administered depending on the weight or age of the patient. The language in which the conditions are expressed is in EL format (Expression Language: JSR-341).</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#hasConditions -->
+
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#hasConditions">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#hasCountry -->
+
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#hasCountry">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#hasCountryContext -->
+
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#hasCountryContext">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:comment>Contains the context in which a parameter is studied within a country. This can be at the level of city, state, autonomous community, or region.</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#hasCurrency -->
+
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#hasCurrency">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#hasDescription -->
+
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#hasDescription">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:comment>Description</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#hasDevelopmentKind -->
+
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#hasDevelopmentKind">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:range>
+            <rdfs:Datatype>
+                <owl:oneOf>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                        <rdf:first>MODIFIED</rdf:first>
+                        <rdf:rest>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                <rdf:first>NATURAL</rdf:first>
+                                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                            </rdf:Description>
+                        </rdf:rest>
+                    </rdf:Description>
+                </owl:oneOf>
+            </rdfs:Datatype>
+        </rdfs:range>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#hasDose -->
+
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#hasDose">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
+        <rdfs:comment>Dosage of the indicated drug</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#hasDuration -->
+
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#hasDuration">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#hasEndAge -->
+
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#hasEndAge">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#hasEtiology -->
+
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#hasEtiology">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:comment>Etiology</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#hasFemaleProportion -->
+
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#hasFemaleProportion">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#hasFrequency -->
+
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#hasFrequency">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
+        <rdfs:comment>Indicates the time cycle of how often the treatment, the follow-up test or their respective strategies have to be applied. In the case of a manifestation of the disease, it will indicate how many times a year the symptom manifests itself. 
+
+By default = 1, for the Manifestations.</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#hasFrequencyModification -->
+
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#hasFrequencyModification">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#hasHoursInterval -->
+
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#hasHoursInterval">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
+        <rdfs:comment>Interval in which the indicated dose of drug should be given.</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#hasIdentifier -->
+
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#hasIdentifier">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:comment>Stores the identifier of an instance. The objective of this field is to facilitate the identification and relationship between instances with a view to software programming.</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#hasInitialAmount -->
+
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#hasInitialAmount">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#hasInterventionKind -->
+
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#hasInterventionKind">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:range>
+            <rdfs:Datatype>
+                <owl:oneOf>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                        <rdf:first>DIAGNOSIS</rdf:first>
+                        <rdf:rest>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                <rdf:first>GENERAL</rdf:first>
+                                <rdf:rest>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                        <rdf:first>SCREENING</rdf:first>
+                                        <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                                    </rdf:Description>
+                                </rdf:rest>
+                            </rdf:Description>
+                        </rdf:rest>
+                    </rdf:Description>
+                </owl:oneOf>
+            </rdfs:Datatype>
+        </rdfs:range>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#hasLifeExpectancy -->
+
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#hasLifeExpectancy">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#hasLifeExpectancyModification -->
+
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#hasLifeExpectancyModification">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#hasLifeExpectancyProbabilityDistribution -->
+
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#hasLifeExpectancyProbabilityDistribution">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#hasMaleProportion -->
+
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#hasMaleProportion">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#hasManifestationKind -->
+
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#hasManifestationKind">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:range>
+            <rdfs:Datatype>
+                <owl:oneOf>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                        <rdf:first>ACUTE</rdf:first>
+                        <rdf:rest>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                <rdf:first>CHRONIC</rdf:first>
+                                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                            </rdf:Description>
+                        </rdf:rest>
+                    </rdf:Description>
+                </owl:oneOf>
+            </rdfs:Datatype>
+        </rdfs:range>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#hasModificationKind -->
+
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#hasModificationKind">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:range>
+            <rdfs:Datatype>
+                <owl:oneOf>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                        <rdf:first>DIFF</rdf:first>
+                        <rdf:rest>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                <rdf:first>RR</rdf:first>
+                                <rdf:rest>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                        <rdf:first>SET</rdf:first>
+                                        <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                                    </rdf:Description>
+                                </rdf:rest>
+                            </rdf:Description>
+                        </rdf:rest>
+                    </rdf:Description>
+                </owl:oneOf>
+            </rdfs:Datatype>
+        </rdfs:range>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#hasMortalityFactor -->
+
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#hasMortalityFactor">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#hasMortalityFactorModification -->
+
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#hasMortalityFactorModification">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#hasMortalityFactorProbabilityDistribution -->
+
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#hasMortalityFactorProbabilityDistribution">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#hasOnSetAge -->
+
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#hasOnSetAge">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#hasPercentForNext -->
+
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#hasPercentForNext">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#hasPercentageTreated -->
+
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#hasPercentageTreated">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#hasPopulationKind -->
+
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#hasPopulationKind">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:range>
+            <rdfs:Datatype>
+                <owl:oneOf>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                        <rdf:first>ADOLESCENT</rdf:first>
+                        <rdf:rest>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                <rdf:first>ADULT</rdf:first>
+                                <rdf:rest>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                        <rdf:first>ELDERLY</rdf:first>
+                                        <rdf:rest>
+                                            <rdf:Description>
+                                                <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                                <rdf:first>INFANT</rdf:first>
+                                                <rdf:rest>
+                                                    <rdf:Description>
+                                                        <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                                        <rdf:first>NEONATAL</rdf:first>
+                                                        <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                                                    </rdf:Description>
+                                                </rdf:rest>
+                                            </rdf:Description>
+                                        </rdf:rest>
+                                    </rdf:Description>
+                                </rdf:rest>
+                            </rdf:Description>
+                        </rdf:rest>
+                    </rdf:Description>
+                </owl:oneOf>
+            </rdfs:Datatype>
+        </rdfs:range>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#hasPresentation -->
+
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#hasPresentation">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:range>
+            <rdfs:Datatype>
+                <owl:oneOf>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                        <rdf:first>CLASSIC</rdf:first>
+                        <rdf:rest>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                <rdf:first>NON-CLASSIC</rdf:first>
+                                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                            </rdf:Description>
+                        </rdf:rest>
+                    </rdf:Description>
+                </owl:oneOf>
+            </rdfs:Datatype>
+        </rdfs:range>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#hasPrevalenceAtBirth -->
+
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#hasPrevalenceAtBirth">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
+        <rdfs:comment>The prevalence of a disease is the total number of individuals presenting an attribute or disease at a time or during a period divided by the population at that point in time or in the middle of the period. Quantifies the proportion of people in a population who have a disease (or any other event) at a given time and provides an estimate of the proportion of subjects in that population who have the disease at that time.</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#hasProbability -->
+
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#hasProbability">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#hasProbabilityDistribution -->
+
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#hasProbabilityDistribution">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#hasProbabilityModification -->
+
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#hasProbabilityModification">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#hasProbabilityOfDiagnosis -->
+
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#hasProbabilityOfDiagnosis">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
+        <rdfs:comment>Probability that the manifestation presented, the clinical diagnosis is made.</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#hasProbabilityOfDiagnosisModification -->
+
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#hasProbabilityOfDiagnosisModification">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#hasRange -->
+
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#hasRange">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:comment>Age range in which the drug will be delivered.
+
+Examples: 
+   0y-2y    =&gt; 0 years to 2 years
+   3m-2y   =&gt; 3 months to 2 years</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#hasRarity -->
+
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#hasRarity">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:range>
+            <rdfs:Datatype>
+                <owl:oneOf>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                        <rdf:first>COMMON</rdf:first>
+                        <rdf:rest>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                <rdf:first>RARE</rdf:first>
+                                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                            </rdf:Description>
+                        </rdf:rest>
+                    </rdf:Description>
+                </owl:oneOf>
+            </rdfs:Datatype>
+        </rdfs:range>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#hasReference -->
+
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#hasReference">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#Reference"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#hasRelativeRisk -->
+
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#hasRelativeRisk">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#hasRelativeRiskModification -->
+
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#hasRelativeRiskModification">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#hasSensitivity -->
+
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#hasSensitivity">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
+        <rdfs:comment>The Sensitivity in epidemiology is the Probability of correctly classifying a sick individual, that is, the Probability that a positive result will be obtained in a diagnostic test for a sick subject. The Sensitivity is, therefore, the ability of the complementary test to detect the disease. Sensitivity is the percentage of true positives or the Probability that the test is positive if the disease is present; False negatives are sick subjects diagnosed as healthy.</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#hasSize -->
+
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#hasSize">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#hasSource -->
+
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#hasSource">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#hasSpecificity -->
+
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#hasSpecificity">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
+        <rdfs:comment>The Specificity of a test is the Probability that a healthy subject will have a negative test result. Specificity is the percentage of true negatives or the Probability that the test will be negative if the disease is not present. False positives are healthy subjects diagnosed as sick.</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#hasSpecificityProbabilityDistribution -->
+
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#hasSpecificityProbabilityDistribution">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#hasStage -->
+
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#hasStage">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#short"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#hasStepOrder -->
+
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#hasStepOrder">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#hasStudyIdentifier -->
+
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#hasStudyIdentifier">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#hasTemporalBehavior -->
+
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#hasTemporalBehavior">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:range>
+            <rdfs:Datatype>
+                <owl:oneOf>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                        <rdf:first>ANNUAL</rdf:first>
+                        <rdf:rest>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                <rdf:first>LIFETIME</rdf:first>
+                                <rdf:rest>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                        <rdf:first>ONETIME</rdf:first>
+                                        <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                                    </rdf:Description>
+                                </rdf:rest>
+                            </rdf:Description>
+                        </rdf:rest>
+                    </rdf:Description>
+                </owl:oneOf>
+            </rdfs:Datatype>
+        </rdfs:range>
+        <rdfs:comment>ONETIME: the cost/utility applies only once at the time of the event.
+ANNUAL: the cost/utility indicates that the indicated value affects annually throughout the patient&apos;s life.</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#hasUtilityKind -->
+
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#hasUtilityKind">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:range>
+            <rdfs:Datatype>
+                <owl:oneOf>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                        <rdf:first>DISUTILITY</rdf:first>
+                        <rdf:rest>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                <rdf:first>UTILITY</rdf:first>
+                                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                            </rdf:Description>
+                        </rdf:rest>
+                    </rdf:Description>
+                </owl:oneOf>
+            </rdfs:Datatype>
+        </rdfs:range>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#hasValue -->
+
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#hasValue">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#hasValueProbabilityDistribution -->
+
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#hasValueProbabilityDistribution">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#hasYear -->
+
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#hasYear">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#short"/>
+        <rdfs:comment>Year in which the parameter data is collected</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#ClinicalDiagnosis -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#ClinicalDiagnosis">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#Detection"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#Screening"/>
+        <rdfs:comment>The process of identifying a disease, condition, or injury based on the signs and symptoms a patient is having and the patient’s health history and physical exam. Further testing, such as blood tests, imaging tests, and biopsies, may be done after a clinical diagnosis is made.</rdfs:comment>
+        <rdfs:isDefinedBy>https://www.cancer.gov/publications/dictionaries/cancer-terms/def/clinical-diagnosis</rdfs:isDefinedBy>
+        <rdfs:label>ClinicalDiagnosis</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#ClinicalDiagnosisDetectionStepStrategy -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#ClinicalDiagnosisDetectionStepStrategy">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#StepStrategy"/>
+        <rdfs:comment>Describes the various steps involved in completing a clinical diagnosis procedure.</rdfs:comment>
+        <rdfs:label>ClinicalDiagnosisDetectionStepStrategy</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#ClinicalDiagnosisDetectionStrategy -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#ClinicalDiagnosisDetectionStrategy">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#DetectionStrategy"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#ScreeningDetectionStrategy"/>
+        <rdfs:comment>The process of identifying a disease, condition, or injury based on the signs and symptoms a patient is having and the patient’s health history and physical exam. Further testing, such as blood tests, imaging tests, and biopsies, may be done after a clinical diagnosis is made.</rdfs:comment>
+        <rdfs:isDefinedBy>https://www.cancer.gov/publications/dictionaries/cancer-terms/def/clinical-diagnosis</rdfs:isDefinedBy>
+        <rdfs:label>ClinicalDiagnosisDetectionStrategy</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#Cost -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#Cost">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#hasAmount"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#hasCountry"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#hasCountryContext"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#hasCurrency"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#hasDescription"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#hasInitialAmount"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#hasSource"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#hasYear"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#short"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#hasTemporalBehavior"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onDataRange>
+                    <rdfs:Datatype>
+                        <owl:oneOf>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                <rdf:first>ANNUAL</rdf:first>
+                                <rdf:rest>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                        <rdf:first>LIFETIME</rdf:first>
+                                        <rdf:rest>
+                                            <rdf:Description>
+                                                <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                                <rdf:first>ONETIME</rdf:first>
+                                                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                                            </rdf:Description>
+                                        </rdf:rest>
+                                    </rdf:Description>
+                                </rdf:rest>
+                            </rdf:Description>
+                        </owl:oneOf>
+                    </rdfs:Datatype>
+                </owl:onDataRange>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment>Stores the details related to the economic value of the resources involved in interventions, treatments, follow-up tests, etc.</rdfs:comment>
+        <rdfs:label>Cost</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#Detection -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#Detection">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#hasDescription"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#hasIdentifier"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#hasSensitivity"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#hasSpecificity"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment>It contains the information necessary to quantitatively analyze a given screening procedure applied to a specific disease.</rdfs:comment>
+        <rdfs:label>Detection</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#DetectionStrategy -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#DetectionStrategy">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#hasDescription"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment>Describes the different strategies to be studied for the detection of a given disease.</rdfs:comment>
+        <rdfs:label>DetectionStrategy</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#Development -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#Development">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#hasDescription"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#hasPrevalenceAtBirth"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#hasStage"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#short"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#hasDevelopmentKind"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onDataRange>
+                    <rdfs:Datatype>
+                        <owl:oneOf>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                <rdf:first>MODIFIED</rdf:first>
+                                <rdf:rest>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                        <rdf:first>NATURAL</rdf:first>
+                                        <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                                    </rdf:Description>
+                                </rdf:rest>
+                            </rdf:Description>
+                        </owl:oneOf>
+                    </rdfs:Datatype>
+                </owl:onDataRange>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#hasEtiology"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onDataRange>
+                    <rdfs:Datatype>
+                        <owl:oneOf>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                <rdf:first>GENETIC</rdf:first>
+                                <rdf:rest>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                        <rdf:first>NON-GENETIC</rdf:first>
+                                        <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                                    </rdf:Description>
+                                </rdf:rest>
+                            </rdf:Description>
+                        </owl:oneOf>
+                    </rdfs:Datatype>
+                </owl:onDataRange>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#hasPresentation"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onDataRange>
+                    <rdfs:Datatype>
+                        <owl:oneOf>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                <rdf:first>CLASSIC</rdf:first>
+                                <rdf:rest>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                        <rdf:first>NON-CLASSIC</rdf:first>
+                                        <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                                    </rdf:Description>
+                                </rdf:rest>
+                            </rdf:Description>
+                        </owl:oneOf>
+                    </rdfs:Datatype>
+                </owl:onDataRange>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment>Describes a certain progression of a disease that comprises a specific set of manifestations.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://purl.obolibrary.org/obo/MONDO_0021125</rdfs:isDefinedBy>
+        <rdfs:label>Development</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#DevelopmentModification -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#DevelopmentModification">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#hasDescription"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#hasLifeExpectancyModification"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#hasModificationKind"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment>Contains the possible modifications that an intervention may have on the parameters of the development of a disease.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://purl.obolibrary.org/obo/MONDO_0021125</rdfs:isDefinedBy>
+        <rdfs:label>DevelopmentModification</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#Disease -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#Disease">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#hasDescription"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#hasIdentifier"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#hasRarity"/>
+                <owl:someValuesFrom>
+                    <rdfs:Datatype>
+                        <owl:oneOf>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                <rdf:first>NOT-RARE</rdf:first>
+                                <rdf:rest>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                        <rdf:first>RARE</rdf:first>
+                                        <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                                    </rdf:Description>
+                                </rdf:rest>
+                            </rdf:Description>
+                        </owl:oneOf>
+                    </rdfs:Datatype>
+                </owl:someValuesFrom>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment>Standard definition of diseases and their possible characteristics</rdfs:comment>
+        <rdfs:isDefinedBy rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://purl.bioontology.org/ontology/SNOMEDCT/64572001</rdfs:isDefinedBy>
+        <rdfs:label>Disease</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#Drug -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#Drug">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#hasDescription"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#hasDose"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#hasHoursInterval"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#hasIdentifier"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment>A natural or synthetic remedy for a disease or manifestation</rdfs:comment>
+        <rdfs:label>Drug</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#FollowUp -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#FollowUp">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#hasDescription"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#hasIdentifier"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment>It contains the information necessary to quantitatively analyze a given follow up procedure applied to a specific disease.</rdfs:comment>
+        <rdfs:label>FollowUp</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#FollowUpStepStrategy -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#FollowUpStepStrategy">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#StepStrategy"/>
+        <rdfs:comment>Describes the various steps involved in completing a follow up  procedure.</rdfs:comment>
+        <rdfs:label>FollowUpStepStrategy</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#FollowUpStrategy -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#FollowUpStrategy">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#hasDescription"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment>It encompasses the different procedures at a general level that must be followed for the follow up of a specific disease.</rdfs:comment>
+        <rdfs:label>FollowUpStrategy</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#Guidelines -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#Guidelines">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#hasDescription"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#hasConditions"/>
+                <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">0</owl:minQualifiedCardinality>
+                <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#hasDose"/>
+                <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">0</owl:minQualifiedCardinality>
+                <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#hasFrequency"/>
+                <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">0</owl:minQualifiedCardinality>
+                <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#hasHoursInterval"/>
+                <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">0</owl:minQualifiedCardinality>
+                <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#hasPercentForNext"/>
+                <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">0</owl:minQualifiedCardinality>
+                <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#hasRange"/>
+                <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">0</owl:minQualifiedCardinality>
+                <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment>The way a treatment, drug, test... is applied. It may consist on more than one GuidelineRange, each one defining the timing, dose, etc, during a period of time</rdfs:comment>
+        <rdfs:label>Guidelines</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#Intervention -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#Intervention">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#hasDescription"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#hasInterventionKind"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment>Defines technologies or procedures used to modify the natural history of the disease.</rdfs:comment>
+        <rdfs:label>Intervention</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#Manifestation -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#Manifestation">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#hasDescription"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#hasDuration"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#hasEndAge"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#hasFrequency"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#hasIdentifier"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#hasMortalityFactor"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#hasOnSetAge"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#hasProbability"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#hasProbabilityOfDiagnosis"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#hasRelativeRisk"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#hasManifestationKind"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onDataRange>
+                    <rdfs:Datatype>
+                        <owl:oneOf>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                <rdf:first>ACUTE</rdf:first>
+                                <rdf:rest>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                        <rdf:first>CHRONIC</rdf:first>
+                                        <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                                    </rdf:Description>
+                                </rdf:rest>
+                            </rdf:Description>
+                        </owl:oneOf>
+                    </rdfs:Datatype>
+                </owl:onDataRange>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment>It contains the symptoms and signs of a disease under a certain context.</rdfs:comment>
+        <rdfs:label>Manifestation</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#ManifestationModification -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#ManifestationModification">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#hasDescription"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#hasModificationKind"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#hasFrequencyModification"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#hasMortalityFactorModification"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#hasProbabilityModification"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#hasProbabilityOfDiagnosisModification"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#hasRelativeRiskModification"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment>Contains the possible modifications that an intervention may have on the parameters of the manifestation of a disease.</rdfs:comment>
+        <rdfs:label>ManifestationModification</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#Population -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#Population">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#hasCountry"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#hasCountryContext"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#hasDescription"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#hasEndAge"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#hasFemaleProportion"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#hasLifeExpectancy"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#hasMaleProportion"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#hasOnSetAge"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#hasSize"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#hasSource"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#hasYear"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#short"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#Reference -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#Reference">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#hasDescription"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment>Main references assessed for the description of the disease</rdfs:comment>
+        <rdfs:label>Reference</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#Screening -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#Screening">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#Detection"/>
+        <rdfs:comment>Checking for disease when there are no symptoms. Since screening may find diseases at an early stage, there may be a better chance of curing the disease. Screening can also include doing a genetic test to check for a person’s risk of developing an inherited disease.</rdfs:comment>
+        <rdfs:isDefinedBy>https://www.cancer.gov/publications/dictionaries/cancer-terms/def/screening</rdfs:isDefinedBy>
+        <rdfs:label>Screening</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#ScreeningDetectionStepStrategy -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#ScreeningDetectionStepStrategy">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#StepStrategy"/>
+        <rdfs:comment>Describes the various steps involved in completing a screening procedure.</rdfs:comment>
+        <rdfs:label>ScreeningDetectionStepStrategy</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#ScreeningDetectionStrategy -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#ScreeningDetectionStrategy">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#DetectionStrategy"/>
+        <rdfs:comment>Checking for disease when there are no symptoms. Since screening may find diseases at an early stage, there may be a better chance of curing the disease. Screening can also include doing a genetic test to check for a person’s risk of developing an inherited disease.</rdfs:comment>
+        <rdfs:isDefinedBy>https://www.cancer.gov/publications/dictionaries/cancer-terms/def/screening</rdfs:isDefinedBy>
+        <rdfs:label>ScreeningDetectionStrategy</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#StepStrategy -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#StepStrategy">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#hasCondition"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#hasDescription"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#hasPercentForNext"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#hasStepOrder"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment>Describes the different steps to be followed to complete a given procedure.</rdfs:comment>
+        <rdfs:label>StepStrategy</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#Treatment -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#Treatment">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#hasDescription"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#hasPercentageTreated"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#hasIdentifier"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment>It contains the information necessary to quantitatively analyze a given treatment procedure applied to a specific disease or intervention.</rdfs:comment>
+        <rdfs:label>Treatment</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#TreatmentStepStrategy -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#TreatmentStepStrategy">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#StepStrategy"/>
+        <rdfs:comment>Describes the various steps involved in completing a treatment  procedure.</rdfs:comment>
+        <rdfs:label>TreatmentStepStrategy</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#TreatmentStrategy -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#TreatmentStrategy">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#hasDescription"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#hasPercentageTreated"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment>Describes any non-drug intervention used to treat a disease or manifestation</rdfs:comment>
+        <rdfs:label>TreatmentStrategy</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#Utility -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#Utility">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#hasCalculationMethod"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#hasCountry"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#hasDescription"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#hasSource"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#hasValue"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#hasYear"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#short"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#hasTemporalBehavior"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onDataRange>
+                    <rdfs:Datatype>
+                        <owl:oneOf>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                <rdf:first>ANNUAL</rdf:first>
+                                <rdf:rest>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                        <rdf:first>LIFETIME</rdf:first>
+                                        <rdf:rest>
+                                            <rdf:Description>
+                                                <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                                <rdf:first>ONETIME</rdf:first>
+                                                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                                            </rdf:Description>
+                                        </rdf:rest>
+                                    </rdf:Description>
+                                </rdf:rest>
+                            </rdf:Description>
+                        </owl:oneOf>
+                    </rdfs:Datatype>
+                </owl:onDataRange>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#hasUtilityKind"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onDataRange>
+                    <rdfs:Datatype>
+                        <owl:oneOf>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                <rdf:first>DISUTILITY</rdf:first>
+                                <rdf:rest>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                        <rdf:first>UTILITY</rdf:first>
+                                        <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                                    </rdf:Description>
+                                </rdf:rest>
+                            </rdf:Description>
+                        </owl:oneOf>
+                    </rdfs:Datatype>
+                </owl:onDataRange>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment>Stores the health-related quality of life that can be used to characterize the impact of a manifestation of the disease.</rdfs:comment>
+        <rdfs:label>Utility</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#DefaultFollowUpCost -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#DefaultFollowUpCost">
+        <rdf:type rdf:resource="http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#Cost"/>
+        <hasAmount rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.0</hasAmount>
+        <hasCountry>Default</hasCountry>
+        <hasCurrency>Euro</hasCurrency>
+        <hasStudyIdentifier>Default_study</hasStudyIdentifier>
+        <hasYear rdf:datatype="http://www.w3.org/2001/XMLSchema#short">2023</hasYear>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#DefaultFollowUpStrategy -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#DefaultFollowUpStrategy">
+        <rdf:type rdf:resource="http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#FollowUpStrategy"/>
+        <hasFollowUpStrategyCost rdf:resource="http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#DefaultFollowUpCost"/>
+        <hasDescription>Default follow-up strategy. Use when no follow-up information is needed</hasDescription>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#DefaultTreatmentCost -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#DefaultTreatmentCost">
+        <rdf:type rdf:resource="http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#Cost"/>
+        <hasAmount rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.0</hasAmount>
+        <hasCountry>Default</hasCountry>
+        <hasCurrency>Euro</hasCurrency>
+        <hasStudyIdentifier>Default_study</hasStudyIdentifier>
+        <hasYear rdf:datatype="http://www.w3.org/2001/XMLSchema#short">2023</hasYear>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#DefaultTreatmentStrategy -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#DefaultTreatmentStrategy">
+        <rdf:type rdf:resource="http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#TreatmentStrategy"/>
+        <hasTreatmentStrategyCost rdf:resource="http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#DefaultTreatmentCost"/>
+        <hasDescription>Default treatment strategy. Use when no treatment information is needed</hasDescription>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#GuidelineLifetimeAnual -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#GuidelineLifetimeAnual">
+        <rdf:type rdf:resource="http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#Guidelines"/>
+        <hasFrequency rdf:datatype="http://www.w3.org/2001/XMLSchema#double">1.0</hasFrequency>
+        <hasRange>0y</hasRange>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#PBD_BasePopulation -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#PBD_BasePopulation">
+        <rdf:type rdf:resource="http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#Population"/>
+        <hasPopulationUtility rdf:resource="http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#PBD_BasePopulationUtility"/>
+        <hasAverageAge rdf:datatype="http://www.w3.org/2001/XMLSchema#double">1.0</hasAverageAge>
+        <hasCountry>Spain</hasCountry>
+        <hasEndAge rdf:datatype="http://www.w3.org/2001/XMLSchema#double">2.0</hasEndAge>
+        <hasFemaleProportion rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.5</hasFemaleProportion>
+        <hasLifeExpectancy rdf:datatype="http://www.w3.org/2001/XMLSchema#double">82.272854</hasLifeExpectancy>
+        <hasMaleProportion rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.5</hasMaleProportion>
+        <hasOnSetAge rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.0</hasOnSetAge>
+        <hasPopulationKind>NEONATAL</hasPopulationKind>
+        <hasSize rdf:datatype="http://www.w3.org/2001/XMLSchema#int">540963</hasSize>
+        <hasStudyIdentifier>PBD_001</hasStudyIdentifier>
+        <hasYear rdf:datatype="http://www.w3.org/2001/XMLSchema#int">2013</hasYear>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#PBD_BasePopulationUtility -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#PBD_BasePopulationUtility">
+        <rdf:type rdf:resource="http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#Utility"/>
+        <hasCountry>Spain</hasCountry>
+        <hasStudyIdentifier>PBD_001</hasStudyIdentifier>
+        <hasTemporalBehavior>ANNUAL</hasTemporalBehavior>
+        <hasUtilityKind>UTILITY</hasUtilityKind>
+        <hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.8861</hasValue>
+        <hasYear rdf:datatype="http://www.w3.org/2001/XMLSchema#int">2013</hasYear>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#PBD_BiotinTreatmentCost -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#PBD_BiotinTreatmentCost">
+        <rdf:type rdf:resource="http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#Cost"/>
+        <hasAmount rdf:datatype="http://www.w3.org/2001/XMLSchema#double">66.2475</hasAmount>
+        <hasCountry>Spain</hasCountry>
+        <hasCurrency>Euro</hasCurrency>
+        <hasDescription>Cost of annual use of biotin for profound biotinidase deficiency</hasDescription>
+        <hasStudyIdentifier>PBD_001</hasStudyIdentifier>
+        <hasTemporalBehavior>ANNUAL</hasTemporalBehavior>
+        <hasYear rdf:datatype="http://www.w3.org/2001/XMLSchema#short">2013</hasYear>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#PBD_BiotinTreatmentStrategy -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#PBD_BiotinTreatmentStrategy">
+        <rdf:type rdf:resource="http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#TreatmentStrategy"/>
+        <hasTreatmentStrategyCost rdf:resource="http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#PBD_BiotinTreatmentCost"/>
+        <hasTreatmentStrategyGuidelines rdf:resource="http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#GuidelineLifetimeAnual"/>
+        <hasDescription>Lifetime treatment with biotin</hasDescription>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#PBD_ClinicalDiagnosis -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#PBD_ClinicalDiagnosis">
+        <rdf:type rdf:resource="http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#ClinicalDiagnosis"/>
+        <hasDetectionCost rdf:resource="http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#PBD_ClinicalDiagnosisCost"/>
+        <hasSensitivity rdf:datatype="http://www.w3.org/2001/XMLSchema#double">1.0</hasSensitivity>
+        <hasSpecificity rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.999935</hasSpecificity>
+        <hasSpecificityProbabilityDistribution>Beta(540904,35)</hasSpecificityProbabilityDistribution>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#PBD_ClinicalDiagnosisCost -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#PBD_ClinicalDiagnosisCost">
+        <rdf:type rdf:resource="http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#Cost"/>
+        <hasAmount rdf:datatype="http://www.w3.org/2001/XMLSchema#double">509.65</hasAmount>
+        <hasAmountProbabilityDistribution>Uniform(409.65, 609.65)</hasAmountProbabilityDistribution>
+        <hasCountry>Spain</hasCountry>
+        <hasCurrency>Euro</hasCurrency>
+        <hasDescription>Cost of diagnosis for profound BD in Spain. Includes retest for screening, two diagnostic tests and two blood extraction.</hasDescription>
+        <hasStudyIdentifier>PBD_001</hasStudyIdentifier>
+        <hasTemporalBehavior>ONETIME</hasTemporalBehavior>
+        <hasYear rdf:datatype="http://www.w3.org/2001/XMLSchema#short">2013</hasYear>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#PBD_ClinicalDiagnosisStepStrategy -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#PBD_ClinicalDiagnosisStepStrategy">
+        <rdf:type rdf:resource="http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#ClinicalDiagnosisDetectionStepStrategy"/>
+        <hasDetection rdf:resource="http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#PBD_ClinicalDiagnosis"/>
+        <hasStepOrder rdf:datatype="http://www.w3.org/2001/XMLSchema#int">1</hasStepOrder>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#PBD_ClinicalDiagnosisStrategy -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#PBD_ClinicalDiagnosisStrategy">
+        <rdf:type rdf:resource="http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#ClinicalDiagnosisDetectionStrategy"/>
+        <hasClinicalDiagnosisStepsStrategy rdf:resource="http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#PBD_ClinicalDiagnosisStepStrategy"/>
+        <hasDetectionStrategyCost rdf:resource="http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#PBD_ClinicalDiagnosisCost"/>
+        <hasDescription>Quantitative enzymatic determination of biotinidase activity in serum and plasma,and analysis of mutations of the biotinidase gene.</hasDescription>
+        <hasSensitivity rdf:datatype="http://www.w3.org/2001/XMLSchema#double">1.0</hasSensitivity>
+        <hasSpecificity rdf:datatype="http://www.w3.org/2001/XMLSchema#double">1.0</hasSpecificity>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#PBD_FakeTreatmentCost -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#PBD_FakeTreatmentCost">
+        <rdf:type rdf:resource="http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#Cost"/>
+        <hasAmount rdf:datatype="http://www.w3.org/2001/XMLSchema#double">20.2475</hasAmount>
+        <hasCountry>Germany</hasCountry>
+        <hasCurrency>Euro</hasCurrency>
+        <hasStudyIdentifier>PBD_002</hasStudyIdentifier>
+        <hasTemporalBehavior>ANNUAL</hasTemporalBehavior>
+        <hasYear rdf:datatype="http://www.w3.org/2001/XMLSchema#int">2018</hasYear>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#PBD_FakeTreatmentStrategy -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#PBD_FakeTreatmentStrategy">
+        <rdf:type rdf:resource="http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#TreatmentStrategy"/>
+        <hasTreatmentStrategyCost rdf:resource="http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#PBD_FakeTreatmentCost"/>
+        <hasTreatmentStrategyGuidelines rdf:resource="http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#GuidelineLifetimeAnual"/>
+        <hasDescription>Lifetime PBD fake treatment</hasDescription>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#PBD_FollowUpCost -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#PBD_FollowUpCost">
+        <rdf:type rdf:resource="http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#Cost"/>
+        <hasAmount rdf:datatype="http://www.w3.org/2001/XMLSchema#double">616.75672</hasAmount>
+        <hasCountry>Spain</hasCountry>
+        <hasCurrency>Euro</hasCurrency>
+        <hasDescription>Cost for annual ophthalmologic, auditory, and medical geneticist or metabolic specialist evaluations, and urinary organic acid and acylcarnitine analyses</hasDescription>
+        <hasStudyIdentifier>PBD_001</hasStudyIdentifier>
+        <hasTemporalBehavior>ANNUAL</hasTemporalBehavior>
+        <hasYear rdf:datatype="http://www.w3.org/2001/XMLSchema#short">2013</hasYear>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#PBD_FollowUpStrategy -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#PBD_FollowUpStrategy">
+        <rdf:type rdf:resource="http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#FollowUpStrategy"/>
+        <hasFollowUpStrategyCost rdf:resource="http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#PBD_FollowUpCost"/>
+        <hasFollowUpStrategyGuidelines rdf:resource="http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#GuidelineLifetimeAnual"/>
+        <hasDescription>Ophthalmologic, auditory, and medical geneticist or metabolic specialist evaluations and urinary organic acid and acylcarnitine analyses.</hasDescription>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#PBD_HearingProblemsManifestation -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#PBD_HearingProblemsManifestation">
+        <rdf:type rdf:resource="http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#Manifestation"/>
+        <hasManifestationCost rdf:resource="http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#PBD_HearingProblemsManifestationCost"/>
+        <hasManifestationFollowUpStrategy rdf:resource="http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#DefaultFollowUpStrategy"/>
+        <hasManifestationFollowUpStrategy rdf:resource="http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#PBD_FollowUpStrategy"/>
+        <hasManifestationTreatmentStrategy rdf:resource="http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#DefaultTreatmentStrategy"/>
+        <hasManifestationTreatmentStrategy rdf:resource="http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#PBD_BiotinTreatmentStrategy"/>
+        <hasUtility rdf:resource="http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#PBD_HearingProblemsManifestationUtility"/>
+        <hasEndAge rdf:datatype="http://www.w3.org/2001/XMLSchema#double">2.0</hasEndAge>
+        <hasManifestationKind>CHRONIC</hasManifestationKind>
+        <hasOnSetAge rdf:datatype="http://www.w3.org/2001/XMLSchema#double">1.0</hasOnSetAge>
+        <hasProbability rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.515</hasProbability>
+        <hasProbabilityDistribution>Beta(24,34)</hasProbabilityDistribution>
+        <hasProbabilityOfDiagnosis rdf:datatype="http://www.w3.org/2001/XMLSchema#double">1.0</hasProbabilityOfDiagnosis>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#PBD_HearingProblemsManifestationCost -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#PBD_HearingProblemsManifestationCost">
+        <rdf:type rdf:resource="http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#Cost"/>
+        <hasAmount rdf:datatype="http://www.w3.org/2001/XMLSchema#double">155.14</hasAmount>
+        <hasCountry>Spain</hasCountry>
+        <hasCurrency>Euro</hasCurrency>
+        <hasDescription>Annual costs for hearing problems.</hasDescription>
+        <hasInitialAmount rdf:datatype="http://www.w3.org/2001/XMLSchema#double">43778.75</hasInitialAmount>
+        <hasStudyIdentifier>PBD_001</hasStudyIdentifier>
+        <hasTemporalBehavior>ANNUAL</hasTemporalBehavior>
+        <hasYear rdf:datatype="http://www.w3.org/2001/XMLSchema#short">2013</hasYear>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#PBD_HearingProblemsManifestationUtility -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#PBD_HearingProblemsManifestationUtility">
+        <rdf:type rdf:resource="http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#Utility"/>
+        <hasCountry>Spain</hasCountry>
+        <hasStudyIdentifier>PBD_001</hasStudyIdentifier>
+        <hasTemporalBehavior>ANNUAL</hasTemporalBehavior>
+        <hasUtilityKind>UTILITY</hasUtilityKind>
+        <hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.8761</hasValue>
+        <hasValueProbabilityDistribution>Beta(5.6,0.79)</hasValueProbabilityDistribution>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#PBD_HypotoniaManifestation -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#PBD_HypotoniaManifestation">
+        <rdf:type rdf:resource="http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#Manifestation"/>
+        <hasManifestationCost rdf:resource="http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#PBD_HypotoniaManifestationCost"/>
+        <hasManifestationFollowUpStrategy rdf:resource="http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#DefaultFollowUpStrategy"/>
+        <hasManifestationFollowUpStrategy rdf:resource="http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#PBD_FollowUpStrategy"/>
+        <hasManifestationTreatmentStrategy rdf:resource="http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#DefaultTreatmentStrategy"/>
+        <hasManifestationTreatmentStrategy rdf:resource="http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#PBD_BiotinTreatmentStrategy"/>
+        <hasUtility rdf:resource="http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#PBD_HypotoniaManifestationUtility"/>
+        <hasEndAge rdf:datatype="http://www.w3.org/2001/XMLSchema#double">1.0</hasEndAge>
+        <hasOnSetAge rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.0</hasOnSetAge>
+        <hasProbability rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.457</hasProbability>
+        <hasProbabilityDistribution>Beta(17,20)</hasProbabilityDistribution>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#PBD_HypotoniaManifestationCost -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#PBD_HypotoniaManifestationCost">
+        <rdf:type rdf:resource="http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#Cost"/>
+        <hasAmount rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.0</hasAmount>
+        <hasCountry>Spain</hasCountry>
+        <hasCurrency>Euro</hasCurrency>
+        <hasDescription>Annual costs for hypotonia.</hasDescription>
+        <hasInitialAmount rdf:datatype="http://www.w3.org/2001/XMLSchema#double">3665.56</hasInitialAmount>
+        <hasStudyIdentifier>PBD_001</hasStudyIdentifier>
+        <hasTemporalBehavior>ONETIME</hasTemporalBehavior>
+        <hasYear rdf:datatype="http://www.w3.org/2001/XMLSchema#short">2013</hasYear>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#PBD_HypotoniaManifestationUtility -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#PBD_HypotoniaManifestationUtility">
+        <rdf:type rdf:resource="http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#Utility"/>
+        <hasCountry>Spain</hasCountry>
+        <hasStudyIdentifier>PBD_001</hasStudyIdentifier>
+        <hasUtilityKind>UTILITY</hasUtilityKind>
+        <hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.8861</hasValue>
+        <hasValueProbabilityDistribution>Beta(5.2,0.67)</hasValueProbabilityDistribution>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#PBD_InterventionNoScreening -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#PBD_InterventionNoScreening">
+        <rdf:type rdf:resource="http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#Intervention"/>
+        <hasInterventionDetectionStrategy rdf:resource="http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#PBD_ClinicalDiagnosisStrategy"/>
+        <hasInterventionFollowUpStrategy rdf:resource="http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#DefaultFollowUpStrategy"/>
+        <hasInterventionFollowUpStrategy rdf:resource="http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#PBD_FollowUpStrategy"/>
+        <hasInterventionPopulation rdf:resource="http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#PBD_BasePopulation"/>
+        <hasInterventionTreatmentStrategy rdf:resource="http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#DefaultTreatmentStrategy"/>
+        <hasInterventionTreatmentStrategy rdf:resource="http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#PBD_BiotinTreatmentStrategy"/>
+        <hasInterventionTreatmentStrategy rdf:resource="http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#PBD_FakeTreatmentStrategy"/>
+        <hasInterventionKind>DIAGNOSIS</hasInterventionKind>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#PBD_InterventionScreening -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#PBD_InterventionScreening">
+        <rdf:type rdf:resource="http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#Intervention"/>
+        <hasInterventionDetectionStrategy rdf:resource="http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#PBD_ScreeningDetectionStrategy"/>
+        <hasInterventionFollowUpStrategy rdf:resource="http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#DefaultFollowUpStrategy"/>
+        <hasInterventionFollowUpStrategy rdf:resource="http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#PBD_FollowUpStrategy"/>
+        <hasInterventionPopulation rdf:resource="http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#PBD_BasePopulation"/>
+        <hasInterventionTreatmentStrategy rdf:resource="http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#DefaultTreatmentStrategy"/>
+        <hasInterventionTreatmentStrategy rdf:resource="http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#PBD_BiotinTreatmentStrategy"/>
+        <hasInterventionKind>SCREENING</hasInterventionKind>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#PBD_MentalDelayManifestation -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#PBD_MentalDelayManifestation">
+        <rdf:type rdf:resource="http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#Manifestation"/>
+        <hasManifestationCost rdf:resource="http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#PBD_MentalDelayManifestationCost"/>
+        <hasManifestationFollowUpStrategy rdf:resource="http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#DefaultFollowUpStrategy"/>
+        <hasManifestationFollowUpStrategy rdf:resource="http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#PBD_FollowUpStrategy"/>
+        <hasManifestationTreatmentStrategy rdf:resource="http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#DefaultTreatmentStrategy"/>
+        <hasManifestationTreatmentStrategy rdf:resource="http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#PBD_BiotinTreatmentStrategy"/>
+        <hasManifestationTreatmentStrategy rdf:resource="http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#PBD_FakeTreatmentStrategy"/>
+        <hasUtility rdf:resource="http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#PBD_MentalDelayManifestationUtility"/>
+        <hasMortalityFactor rdf:datatype="http://www.w3.org/2001/XMLSchema#double">-9.6</hasMortalityFactor>
+        <hasMortalityFactorProbabilityDistribution>Gamma(25,0.38)</hasMortalityFactorProbabilityDistribution>
+        <hasOnSetAge rdf:datatype="http://www.w3.org/2001/XMLSchema#double">1.0</hasOnSetAge>
+        <hasProbability rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.557</hasProbability>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#PBD_MentalDelayManifestationCost -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#PBD_MentalDelayManifestationCost">
+        <rdf:type rdf:resource="http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#Cost"/>
+        <hasAmount rdf:datatype="http://www.w3.org/2001/XMLSchema#double">217.74</hasAmount>
+        <hasCountry>Spain</hasCountry>
+        <hasCurrency>Euro</hasCurrency>
+        <hasDescription>Annual costs for mental delay.</hasDescription>
+        <hasInitialAmount rdf:datatype="http://www.w3.org/2001/XMLSchema#double">16824.19</hasInitialAmount>
+        <hasStudyIdentifier>PBD_001</hasStudyIdentifier>
+        <hasTemporalBehavior>ANNUAL</hasTemporalBehavior>
+        <hasYear rdf:datatype="http://www.w3.org/2001/XMLSchema#short">2013</hasYear>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#PBD_MentalDelayManifestationUtility -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#PBD_MentalDelayManifestationUtility">
+        <rdf:type rdf:resource="http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#Utility"/>
+        <hasCountry>Spain</hasCountry>
+        <hasStudyIdentifier>PBD_001</hasStudyIdentifier>
+        <hasUtilityKind>UTILITY</hasUtilityKind>
+        <hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.8161</hasValue>
+        <hasValueProbabilityDistribution>Beta(1.71,0.39)</hasValueProbabilityDistribution>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#PBD_NaturalDevelopment -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#PBD_NaturalDevelopment">
+        <rdf:type rdf:resource="http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#Development"/>
+        <hasDevelopmentManifestations rdf:resource="http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#PBD_HearingProblemsManifestation"/>
+        <hasDevelopmentManifestations rdf:resource="http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#PBD_HypotoniaManifestation"/>
+        <hasDevelopmentManifestations rdf:resource="http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#PBD_MentalDelayManifestation"/>
+        <hasDevelopmentManifestations rdf:resource="http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#PBD_SeizureManifestation"/>
+        <hasDevelopmentManifestations rdf:resource="http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#PBD_SkinProblemsManifestation"/>
+        <hasDevelopmentManifestations rdf:resource="http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#PBD_VisionLossManifestation"/>
+        <hasDevelopmentKind>NATURAL</hasDevelopmentKind>
+        <hasLifeExpectancyProbabilityDistribution>Gamma(25, 3.29)</hasLifeExpectancyProbabilityDistribution>
+        <hasStage rdf:datatype="http://www.w3.org/2001/XMLSchema#short">0</hasStage>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#PBD_ProfoundBiotinidaseDeficiency -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#PBD_ProfoundBiotinidaseDeficiency">
+        <rdf:type rdf:resource="http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#Disease"/>
+        <hasDetectionStrategy rdf:resource="http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#PBD_ClinicalDiagnosisStrategy"/>
+        <hasDetectionStrategy rdf:resource="http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#PBD_ScreeningDetectionStrategy"/>
+        <hasDiseaseDevelopments rdf:resource="http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#PBD_NaturalDevelopment"/>
+        <hasDiseaseFollowUpStrategy rdf:resource="http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#DefaultFollowUpStrategy"/>
+        <hasDiseaseFollowUpStrategy rdf:resource="http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#PBD_FollowUpStrategy"/>
+        <hasDiseaseTreatmentStrategy rdf:resource="http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#DefaultTreatmentStrategy"/>
+        <hasDiseaseTreatmentStrategy rdf:resource="http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#PBD_BiotinTreatmentStrategy"/>
+        <hasDiseaseTreatmentStrategy rdf:resource="http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#PBD_FakeTreatmentStrategy"/>
+        <hasInterventions rdf:resource="http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#PBD_InterventionNoScreening"/>
+        <hasInterventions rdf:resource="http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#PBD_InterventionScreening"/>
+        <hasReferences rdf:resource="http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#PBD_References"/>
+        <hasPrevalenceAtBirth rdf:datatype="http://www.w3.org/2001/XMLSchema#double">1.4788E-5</hasPrevalenceAtBirth>
+        <hasProbabilityDistribution>Beta(8, 540955)</hasProbabilityDistribution>
+        <hasRarity>RARE</hasRarity>
+        <rdfs:isDefinedBy>https://bioportal.bioontology.org/ontologies/SNOMEDCT/?p=classes&amp;conceptid=http%3A%2F%2Fpurl.bioontology.org%2Fontology%2FSNOMEDCT%2F8808004&amp;jump_to_nav=true</rdfs:isDefinedBy>
+        <rdfs:label>ProfoundBiotinidaseDeficiency</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#PBD_References -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#PBD_References">
+        <rdf:type rdf:resource="http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#Reference"/>
+        <hasReference>DO - DOID:856</hasReference>
+        <hasReference>GARD - https://rarediseases.info.nih.gov/diseases/894/index</hasReference>
+        <hasReference>ICD - E53.8</hasReference>
+        <hasReference>OMIM - https://omim.org/entry/253260</hasReference>
+        <hasReference>ORDO - https://www.orpha.net/consor/cgi-bin/OC_Exp.php?lng=EN&amp;Expert=79241</hasReference>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#PBD_Screening -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#PBD_Screening">
+        <rdf:type rdf:resource="http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#Screening"/>
+        <hasDetectionCost rdf:resource="http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#PBD_ScreeningCost"/>
+        <hasDescription>Measurement of biotinidase activity in blood-saturated filter paper samples on enzymatic assay or semiquantitative fluorometric determination</hasDescription>
+        <hasIdentifier>BioActivity</hasIdentifier>
+        <hasSensitivity rdf:datatype="http://www.w3.org/2001/XMLSchema#double">1.0</hasSensitivity>
+        <hasSpecificity rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.999935</hasSpecificity>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#PBD_ScreeningCost -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#PBD_ScreeningCost">
+        <rdf:type rdf:resource="http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#Cost"/>
+        <hasAmount rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.89</hasAmount>
+        <hasAmountProbabilityDistribution>Uniform(0.5, 2.5)</hasAmountProbabilityDistribution>
+        <hasCountry>Spain</hasCountry>
+        <hasCurrency>Euro</hasCurrency>
+        <hasDescription>Cost of screening test for profound biotinidase deficiency in Spain</hasDescription>
+        <hasStudyIdentifier>PBD_001</hasStudyIdentifier>
+        <hasTemporalBehavior>ONETIME</hasTemporalBehavior>
+        <hasYear rdf:datatype="http://www.w3.org/2001/XMLSchema#short">2013</hasYear>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#PBD_ScreeningDetectionStepStrategy -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#PBD_ScreeningDetectionStepStrategy">
+        <rdf:type rdf:resource="http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#ScreeningDetectionStepStrategy"/>
+        <hasDetection rdf:resource="http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#PBD_Screening"/>
+        <hasStepOrder rdf:datatype="http://www.w3.org/2001/XMLSchema#int">1</hasStepOrder>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#PBD_ScreeningDetectionStrategy -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#PBD_ScreeningDetectionStrategy">
+        <rdf:type rdf:resource="http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#ScreeningDetectionStrategy"/>
+        <hasDetectionStrategyCost rdf:resource="http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#PBD_ScreeningCost"/>
+        <hasScreeningStepsStrategy rdf:resource="http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#PBD_ScreeningDetectionStepStrategy"/>
+        <hasDescription>Measurement of biotinidase activity in blood-saturated filter paper samples on enzymatic assay or semiquantitative fluorometric determination. After a positive, the analysis is repeated twice.</hasDescription>
+        <hasSensitivity rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.999935</hasSensitivity>
+        <hasSpecificity rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.999935</hasSpecificity>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#PBD_SeizureManifestation -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#PBD_SeizureManifestation">
+        <rdf:type rdf:resource="http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#Manifestation"/>
+        <hasManifestationCost rdf:resource="http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#PBD_SeizureManifestationCost"/>
+        <hasManifestationFollowUpStrategy rdf:resource="http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#DefaultFollowUpStrategy"/>
+        <hasManifestationFollowUpStrategy rdf:resource="http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#PBD_FollowUpStrategy"/>
+        <hasManifestationTreatmentStrategy rdf:resource="http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#DefaultTreatmentStrategy"/>
+        <hasManifestationTreatmentStrategy rdf:resource="http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#PBD_BiotinTreatmentStrategy"/>
+        <hasManifestationTreatmentStrategy rdf:resource="http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#PBD_FakeTreatmentStrategy"/>
+        <hasUtility rdf:resource="http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#PBD_SeizureManifestationUtility"/>
+        <hasEndAge rdf:datatype="http://www.w3.org/2001/XMLSchema#double">1.0</hasEndAge>
+        <hasOnSetAge rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.0</hasOnSetAge>
+        <hasProbability rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.564</hasProbability>
+        <hasProbabilityDistribution>Beta(65, 50)</hasProbabilityDistribution>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#PBD_SeizureManifestationCost -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#PBD_SeizureManifestationCost">
+        <rdf:type rdf:resource="http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#Cost"/>
+        <hasAmount rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.0</hasAmount>
+        <hasCountry>Spain</hasCountry>
+        <hasCurrency>Euro</hasCurrency>
+        <hasDescription>Annual costs for seizures.</hasDescription>
+        <hasInitialAmount rdf:datatype="http://www.w3.org/2001/XMLSchema#double">3665.56</hasInitialAmount>
+        <hasStudyIdentifier>PBD_001</hasStudyIdentifier>
+        <hasTemporalBehavior>ONETIME</hasTemporalBehavior>
+        <hasYear rdf:datatype="http://www.w3.org/2001/XMLSchema#short">2013</hasYear>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#PBD_SeizureManifestationUtility -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#PBD_SeizureManifestationUtility">
+        <rdf:type rdf:resource="http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#Utility"/>
+        <hasCountry>Spain</hasCountry>
+        <hasStudyIdentifier>PBD_001</hasStudyIdentifier>
+        <hasUtilityKind>UTILITY</hasUtilityKind>
+        <hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.8461</hasValue>
+        <hasValueProbabilityDistribution>Beta(1.65,0.3)</hasValueProbabilityDistribution>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#PBD_SkinProblemsManifestation -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#PBD_SkinProblemsManifestation">
+        <rdf:type rdf:resource="http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#Manifestation"/>
+        <hasManifestationCost rdf:resource="http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#PBD_SkinProblemsManifestationCost"/>
+        <hasManifestationFollowUpStrategy rdf:resource="http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#DefaultFollowUpStrategy"/>
+        <hasManifestationFollowUpStrategy rdf:resource="http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#PBD_FollowUpStrategy"/>
+        <hasManifestationTreatmentStrategy rdf:resource="http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#DefaultTreatmentStrategy"/>
+        <hasManifestationTreatmentStrategy rdf:resource="http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#PBD_BiotinTreatmentStrategy"/>
+        <hasManifestationTreatmentStrategy rdf:resource="http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#PBD_FakeTreatmentStrategy"/>
+        <hasUtility rdf:resource="http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#PBD_SkinProblemsManifestationUtility"/>
+        <hasEndAge rdf:datatype="http://www.w3.org/2001/XMLSchema#double">1.0</hasEndAge>
+        <hasOnSetAge rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.0</hasOnSetAge>
+        <hasProbability rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.41</hasProbability>
+        <hasProbabilityDistribution>Beta(24,34)</hasProbabilityDistribution>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#PBD_SkinProblemsManifestationCost -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#PBD_SkinProblemsManifestationCost">
+        <rdf:type rdf:resource="http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#Cost"/>
+        <hasAmount rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.0</hasAmount>
+        <hasCountry>Spain</hasCountry>
+        <hasCurrency>Euro</hasCurrency>
+        <hasDescription>Annual costs for skin problems.</hasDescription>
+        <hasInitialAmount rdf:datatype="http://www.w3.org/2001/XMLSchema#double">3665.56</hasInitialAmount>
+        <hasStudyIdentifier>PBD_001</hasStudyIdentifier>
+        <hasTemporalBehavior>ONETIME</hasTemporalBehavior>
+        <hasYear rdf:datatype="http://www.w3.org/2001/XMLSchema#short">2013</hasYear>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#PBD_SkinProblemsManifestationUtility -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#PBD_SkinProblemsManifestationUtility">
+        <rdf:type rdf:resource="http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#Utility"/>
+        <hasCountry>Spain</hasCountry>
+        <hasStudyIdentifier>PBD_001</hasStudyIdentifier>
+        <hasUtilityKind>UTILITY</hasUtilityKind>
+        <hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.8861</hasValue>
+        <hasValueProbabilityDistribution>Beta(5.2,0.67)</hasValueProbabilityDistribution>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#PBD_VisionLossManifestation -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#PBD_VisionLossManifestation">
+        <rdf:type rdf:resource="http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#Manifestation"/>
+        <hasManifestationCost rdf:resource="http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#PBD_VisionLossManifestationCost"/>
+        <hasManifestationFollowUpStrategy rdf:resource="http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#DefaultFollowUpStrategy"/>
+        <hasManifestationFollowUpStrategy rdf:resource="http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#PBD_FollowUpStrategy"/>
+        <hasManifestationTreatmentStrategy rdf:resource="http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#DefaultTreatmentStrategy"/>
+        <hasManifestationTreatmentStrategy rdf:resource="http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#PBD_BiotinTreatmentStrategy"/>
+        <hasUtility rdf:resource="http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#PBD_VisionLossManifestationUtility"/>
+        <hasOnSetAge rdf:datatype="http://www.w3.org/2001/XMLSchema#double">1.0</hasOnSetAge>
+        <hasProbability rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.175</hasProbability>
+        <hasProbabilityDistribution>Beta(19,91)</hasProbabilityDistribution>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#PBD_VisionLossManifestationCost -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#PBD_VisionLossManifestationCost">
+        <rdf:type rdf:resource="http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#Cost"/>
+        <hasAmount rdf:datatype="http://www.w3.org/2001/XMLSchema#double">121.86</hasAmount>
+        <hasCountry>Spain</hasCountry>
+        <hasCurrency>Euro</hasCurrency>
+        <hasDescription>Annual costs for vision loss.</hasDescription>
+        <hasInitialAmount rdf:datatype="http://www.w3.org/2001/XMLSchema#double">10155.44</hasInitialAmount>
+        <hasStudyIdentifier>PBD_001</hasStudyIdentifier>
+        <hasTemporalBehavior>ANNUAL</hasTemporalBehavior>
+        <hasYear rdf:datatype="http://www.w3.org/2001/XMLSchema#short">2013</hasYear>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#PBD_VisionLossManifestationUtility -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#PBD_VisionLossManifestationUtility">
+        <rdf:type rdf:resource="http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#Utility"/>
+        <hasCountry>Spain</hasCountry>
+        <hasStudyIdentifier>PBD_001</hasStudyIdentifier>
+        <hasUtilityKind>UTILITY</hasUtilityKind>
+        <hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.8861</hasValue>
+        <hasValueProbabilityDistribution>Beta((5.2,0.67)</hasValueProbabilityDistribution>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // General axioms
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#ClinicalDiagnosisDetectionStepStrategy"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#FollowUpStepStrategy"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#ScreeningDetectionStepStrategy"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#TreatmentStepStrategy"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#Cost"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#Detection"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#DetectionStrategy"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#Development"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#DevelopmentModification"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#Disease"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#Drug"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#FollowUp"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#FollowUpStrategy"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#Guidelines"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#Intervention"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#Manifestation"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#ManifestationModification"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#Population"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#Reference"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#StepStrategy"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#Treatment"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#TreatmentStrategy"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/storh/ontologies/2022/11/StaDiOS#Utility"/>
+        </owl:members>
+    </rdf:Description>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 5.1.18) https://github.com/owlcs/owlapi/ -->
+
+

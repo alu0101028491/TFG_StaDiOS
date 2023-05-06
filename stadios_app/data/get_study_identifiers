@@ -1,0 +1,4 @@
+SELECT ?studyIdentifier
+WHERE {
+    ?x std:hasStudyIdentifier ?studyIdentifier .
+}

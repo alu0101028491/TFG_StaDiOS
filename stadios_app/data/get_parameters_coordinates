@@ -1,0 +1,21 @@
+SELECT DISTINCT ?disease ?development ?parameterType ?parameter ?studyIdentifier ?countryLabel ?coordinates
+WHERE
+{
+  ?disease a std:Disease;
+            std:hasDiseaseDevelopments ?development.
+  ?parameter std:hasCountry ?parameterCountry;
+             std:hasStudyIdentifier ?studyIdentifier;
+             rdf:type ?parameterType.
+  ?parameterType a owl:Class.
+
+  SERVICE <https://query.wikidata.org/sparql>
+  {
+      {
+          ?item ((wdt:P31)/(wdt:P279*)) wd:Q6256;
+          rdfs:label ?countryLabel;
+          wdt:P625 ?coordinates.
+          FILTER (lang(?countryLabel)="en")
+      }
+   }
+  FILTER CONTAINS(?countryLabel,?parameterCountry)
+}

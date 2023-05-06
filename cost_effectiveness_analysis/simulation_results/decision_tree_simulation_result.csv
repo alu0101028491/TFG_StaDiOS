@@ -1,0 +1,3 @@
+interventionKind,detectionStrategy,treatmentStrategy,followUpStrategy,Branch Lifetime Cost,Branch Annual Cost,Branch QALY
+DIAGNOSIS,PBD_ClinicalDiagnosisStrategy,PBD_BiotinTreatmentStrategy,PBD_FollowUpStrategy,1.240033200588897,1.1059257145409982,72.90182628550481
+SCREENING,PBD_ScreeningDetectionStrategy,PBD_BiotinTreatmentStrategy,PBD_FollowUpStrategy,2.073467575404175,2.073458858417582,72.90197591967313
